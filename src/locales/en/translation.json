@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "solutions": "Solutions",
+    "projects": "Projects",
+    "news": "News",
+    "contact": "Contact Us",
+    "quote": "Request a Quote",
+    "menu": "Menu",
+    "close": "Close",
+    "allProducts": "View all products",
+    "categories": "Product categories",
+    "skip": "Skip to content"
+  },
+  "common": {
+    "explore": "Explore",
+    "viewDetail": "View details",
+    "requestQuote": "Request a Quote",
+    "contactPrice": "Contact for price",
+    "callNow": "Call now",
+    "learnMore": "Learn more",
+    "readMore": "Read more",
+    "sample": "Sample content",
+    "illustration": "Technical illustration – real photo coming soon",
+    "scroll": "Scroll to explore",
+    "hotline": "Hotline",
+    "contactPerson": "Contact person",
+    "facebook": "Facebook",
+    "maps": "Google Maps",
+    "directions": "Directions to Hoa Phu",
+    "photoActivity": "Activity & equipment photo",
+    "close": "Close",
+    "prev": "Previous image",
+    "next": "Next image",
+    "email": "Email",
+    "office": "Head office",
+    "business": "Business location",
+    "factory": "Factory",
+    "prevPage": "Previous page",
+    "nextPage": "Next page"
+  },
+  "hero": {
+    "line1": "Engineering",
+    "line2": "the future",
+    "line3": "of industry.",
+    "desc": "Woodworking machinery, production lines, industrial conveyors and mechanical machining for factories.",
+    "cta1": "Explore products",
+    "cta2": "Request a Quote",
+    "webglFallback": "WebGL is not supported – showing a fallback image."
+  },
+  "scenes": {
+    "s1": {
+      "label": "The Machine",
+      "title": "Precision in every detail.",
+      "desc": "Hoa Phu focuses on supplying machinery and industrial equipment suited to each stage of your production."
+    },
+    "s2": {
+      "label": "The Process",
+      "title": "Solutions for every production stage.",
+      "desc": "Cutting heads, motion axes and drive systems – equipment for sawing, planing, clamping, sanding and finishing."
+    },
+    "s3": {
+      "label": "The Production Line",
+      "title": "Connecting production stages.",
+      "desc": "Finger-jointing / auto clamping lines, UV flooring coating & curing lines, automatic panel coating lines."
+    },
+    "s4": {
+      "label": "Industrial Movement",
+      "title": "Continuous operation. Efficient connection.",
+      "desc": "Roller, PVC, rubber, chain, heat-resistant Kevlar and stainless steel mesh conveyors."
+    },
+    "s5": {
+      "label": "Engineering",
+      "title": "Mechanical solutions for production needs.",
+      "desc": "Machine parts, woodworking accessories, gearboxes and hydraulic power units."
+    },
+    "s6": {
+      "label": "Hoa Phu",
+      "title": "Hoa Phu – alongside your production.",
+      "cta": "Explore the product catalogue"
+    }
+  },
+  "home": {
+    "catEyebrow": "Product categories",
+    "catTitle": "Equipment for every stage.",
+    "featEyebrow": "Featured products",
+    "featTitle": "Signature machines.",
+    "whyTitle": "One source for workshop machinery.",
+    "why": [
+      "In-house manufacturing",
+      "Imported from Japan – EU – Taiwan",
+      "Used woodworking machinery",
+      "Custom mechanical machining",
+      "Complete-system advice"
+    ],
+    "solEyebrow": "Solutions",
+    "solTitle": "Solutions for the wood industry.",
+    "solCta": "Explore solutions",
+    "appTitle": "Equipment for many industries.",
+    "apps": [
+      "Wood processing plants",
+      "Furniture manufacturing",
+      "Flooring production",
+      "Export wood factories",
+      "Industrial lines"
+    ],
+    "projEyebrow": "Projects & activities",
+    "projTitle": "Projects & activities.",
+    "projNote": "Real photos from our workshop and exhibitions.",
+    "projCta": "View the gallery",
+    "partnersTitle": "Partners",
+    "newsEyebrow": "News",
+    "newsTitle": "News & technical insights.",
+    "newsCta": "All articles",
+    "faqTitle": "Quick answers.",
+    "aboutTitle": "About Hoa Phu.",
+    "aboutP2": "A machinery manufacturer that also supplies imported machines from Japan, Europe and Taiwan, plus used machinery.",
+    "ctaTitle1": "Let's build",
+    "ctaTitle2": "something better.",
+    "ctaDesc": "Tell us your needs and we will help you choose suitable equipment.",
+    "ctaBtn": "Send a quote request"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "About Hoa Phu Mechanical Co., Ltd",
+    "desc": "A professional machine manufacturer whose goal is to bring convenience and raise productivity and efficiency for our customers’ businesses.",
+    "overviewTitle": "A professional machinery manufacturer.",
+    "fieldsTitle": "Fields of activity.",
+    "placeholderNote": "Content based on the About page of the official website hoaphuco.com.vn.",
+    "galleryTitle": "Workshop & machinery.",
+    "ctaTitle": "Discuss your needs with Hoa Phu.",
+    "p2": "Besides the machines we design and build, Hoa Phu supplies imported products from Japan, Europe and Taiwan as well as used machinery – helping customers build a complete system at the most reasonable cost.",
+    "p3": "We continuously research, improve quality and develop new products that suit the production conditions of each business in Vietnam."
+  },
+  "products": {
+    "eyebrow": "Equipment catalogue",
+    "title": "Products",
+    "desc": "Browse by category, machine type or product name.",
+    "search": "Search by name or product code…",
+    "categories": "Categories",
+    "all": "All products",
+    "type": "Machine type",
+    "allTypes": "All machine types",
+    "condition": "Condition",
+    "new": "New",
+    "used": "Used",
+    "sort": "Sort",
+    "sortDefault": "Default",
+    "sortAZ": "Name A–Z",
+    "sortZA": "Name Z–A",
+    "clear": "Clear filters",
+    "filters": "Filters",
+    "results": "{{count}} products",
+    "noResults": "No matching products found.",
+    "apply": "Show results",
+    "line": "Product line",
+    "showing": "showing {{from}}–{{to}}"
+  },
+  "detail": {
+    "code": "Product code",
+    "type": "Machine type",
+    "condition": "Condition",
+    "price": "Price",
+    "intro": "Product description",
+    "specs": "Technical specifications",
+    "specsEmpty": "No specification table published for this product yet. Please call our hotline for accurate details.",
+    "related": "Related products",
+    "video": "Product video",
+    "line": "Product line",
+    "source": "Information & photos from the official website"
+  },
+  "solutions": {
+    "eyebrow": "Solutions & lines",
+    "title": "Solutions for every production stage.",
+    "desc": "Equipment and lines for the wood processing industry.",
+    "related": "Related equipment",
+    "cta": "Get solution advice",
+    "note": "The scope of custom line design / fabrication will be confirmed during direct discussion."
+  },
+  "projects": {
+    "eyebrow": "Projects & activities",
+    "title": "Activity & equipment gallery.",
+    "desc": "Hoa Phu’s real equipment and activities.",
+    "intro": "Real activity and equipment photos – not customer projects.",
+    "all": "All",
+    "empty": "No images in this field yet."
+  },
+  "news": {
+    "eyebrow": "News & insights",
+    "title": "Technical news.",
+    "desc": "Insights on machinery, production lines and conveyors.",
+    "search": "Search articles…",
+    "categories": "Categories",
+    "all": "All",
+    "empty": "No matching articles.",
+    "related": "Related articles",
+    "share": "Share",
+    "copy": "Copy link",
+    "copied": "Copied",
+    "sampleNote": "This is a sample article and will be replaced by official company content.",
+    "page": "Page"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contact Hoa Phu",
+    "desc": "Send us your machinery, equipment and production needs.",
+    "formTitle": "Send us your enquiry.",
+    "mapTitle": "Location."
+  },
+  "quote": {
+    "eyebrow": "Request a Quote",
+    "title": "Request a Quote",
+    "desc": "Tell us which equipment you need and we will get back to you.",
+    "s1": "Contact details",
+    "s2": "Equipment of interest",
+    "s3": "Requirements",
+    "steps": [
+      "Send equipment details and requirements",
+      "Hoa Phu receives your request",
+      "We discuss & advise by phone"
+    ],
+    "process": "Process",
+    "prefilled": "Product pre-filled from the detail page"
+  },
+  "form": {
+    "name": "Full name",
+    "company": "Company name",
+    "companyQ": "Business name",
+    "phone": "Phone number",
+    "email": "Email",
+    "address": "Address",
+    "message": "Your enquiry",
+    "product": "Product of interest",
+    "productPh": "e.g. Wide belt sander",
+    "category": "Product category",
+    "selectCategory": "— Select a category —",
+    "quantity": "Estimated quantity",
+    "usage": "Intended use",
+    "usagePh": "Stage, material, target output…",
+    "extra": "Additional information",
+    "file": "File / technical drawing",
+    "fileDisabled": "File upload will be enabled once the backend supports it.",
+    "agree": "I agree that Hoa Phu may use this information to contact me, in line with the data processing policy.",
+    "required": "Required",
+    "send": "Send message",
+    "sendQuote": "Send quote request",
+    "sending": "Sending…",
+    "success": "Your request has been sent. Hoa Phu will contact you.",
+    "notConfigured": "The online form system is not connected yet, so your information has NOT been sent to Hoa Phu. Your entries are kept – please call 0913 813 412 for immediate support.",
+    "error": "Sending failed. Your data has been kept – please try again or call 0913 813 412.",
+    "err": {
+      "name": "Please enter your full name (at least 2 characters).",
+      "phone": "Invalid phone number (e.g. 0913 813 412).",
+      "email": "Invalid email address.",
+      "product": "Please enter the product you are interested in.",
+      "message": "Please enter your message (at least 10 characters).",
+      "agree": "Please accept the data processing policy.",
+      "quantity": "Quantity must be a positive whole number."
+    }
+  },
+  "footer": {
+    "desc": "Woodworking machinery, production lines, industrial conveyors and mechanical machining.",
+    "categories": "Categories",
+    "links": "Links",
+    "contact": "Contact",
+    "rights": "Copyright © 2026 Hoa Phu Mechanical Co., Ltd.",
+    "privacy": "Privacy policy: coming soon"
+  },
+  "floating": {
+    "call": "Call 0913 813 412",
+    "zalo": "Chat on Zalo",
+    "messenger": "Messenger",
+    "top": "Back to top",
+    "open": "Quick contact",
+    "close": "Close quick contact"
+  },
+  "notFound": {
+    "title": "Page not found.",
+    "desc": "The page you are looking for does not exist or has moved.",
+    "home": "Back to home",
+    "products": "View products"
+  },
+  "seo": {
+    "home": "Hoa Phu – Woodworking Machinery, Production Lines & Industrial Conveyors",
+    "homeDesc": "Hoa Phu Mechanical Co., Ltd supplies new and used woodworking machinery, production lines, industrial conveyors, mechanical machining and air compressors in Ho Chi Minh City.",
+    "about": "About Hoa Phu Mechanical Co., Ltd",
+    "products": "Products – Woodworking Machinery, Conveyors, Industrial Equipment",
+    "solutions": "Wood Industry Solutions & Production Lines",
+    "projects": "Activity & Equipment Gallery",
+    "news": "News & Technical Insights",
+    "contact": "Contact Hoa Phu",
+    "quote": "Request a Machinery Quote",
+    "notFound": "Page not found"
+  }
+}

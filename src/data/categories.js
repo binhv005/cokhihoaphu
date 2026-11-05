@@ -1,0 +1,92 @@
+// Cây danh mục sản phẩm nhiều cấp.
+// `placeholder` = loại hình minh hoạ kỹ thuật dùng khi chưa có ảnh thật.
+export const categories = [
+  {
+    id: 'woodworking-machinery',
+    no: '01',
+    name: { vi: 'Máy chế biến gỗ', en: 'Woodworking Machinery' },
+    short: { vi: 'Máy ghép, cưa, chà nhám, bào, phay, CNC… cho xưởng và nhà máy gỗ.', en: 'Clamping, sawing, sanding, planing, shaping and CNC machines for wood factories.' },
+    image: '/images/catalog/1149-0.webp',
+    placeholder: 'machine',
+    children: [
+      { id: 'may-ghep-go', name: { vi: 'Máy ghép gỗ', en: 'Wood Clamping & Jointing Machines' } },
+      { id: 'may-ep-go', name: { vi: 'Máy ép gỗ', en: 'Wood Presses' } },
+      { id: 'may-cua', name: { vi: 'Máy cưa', en: 'Sawing Machines' } },
+      { id: 'may-cat-phay', name: { vi: 'Máy cắt phay 2 đầu', en: 'Double-End Tenoners' } },
+      { id: 'may-cha-nham', name: { vi: 'Máy chà nhám', en: 'Sanding Machines' } },
+      { id: 'may-say-uv', name: { vi: 'Máy sấy UV / hồng ngoại', en: 'UV / Infrared Dryers' } },
+      { id: 'may-bao', name: { vi: 'Máy bào', en: 'Planers & Moulders' } },
+      { id: 'may-khoan', name: { vi: 'Máy khoan', en: 'Boring Machines' } },
+      { id: 'may-phay-mong', name: { vi: 'Máy phay mộng', en: 'Tenoning Machines' } },
+      { id: 'may-phay-dinh-hinh', name: { vi: 'Máy phay – định hình', en: 'Shaping & Copy Routers' } },
+      { id: 'may-tien', name: { vi: 'Máy tiện', en: 'Wood Lathes' } },
+      { id: 'may-dan-canh', name: { vi: 'Máy dán cạnh', en: 'Edge Banding Machines' } },
+      { id: 'may-cnc', name: { vi: 'Máy CNC', en: 'CNC Machines' } },
+      { id: 'may-veneer', name: { vi: 'Máy ngành veneer', en: 'Veneer Machinery' } },
+      { id: 'may-mai-dung-cu', name: { vi: 'Máy mài dụng cụ cắt', en: 'Tool Grinders' } },
+    ],
+  },
+  {
+    id: 'production-lines',
+    no: '02',
+    name: { vi: 'Dây chuyền sản xuất', en: 'Production Lines' },
+    short: { vi: 'Dây chuyền ghép finger, sơn và sấy UV ván sàn, sơn tấm tự động.', en: 'Finger-jointing, UV flooring coating and automatic panel coating lines.' },
+    image: '/images/catalog/1194-0.webp',
+    placeholder: 'line',
+    children: [
+      { id: 'day-chuyen-finger', name: { vi: 'Dây chuyền finger / ghép tự động', en: 'Finger-Jointing / Auto Clamping Lines' } },
+      { id: 'day-chuyen-son-uv', name: { vi: 'Dây chuyền sơn và sấy UV ván sàn', en: 'UV Flooring Coating & Curing Lines' } },
+      { id: 'day-chuyen-son-tam', name: { vi: 'Dây chuyền sơn tấm tự động', en: 'Automatic Panel Coating Lines' } },
+    ],
+  },
+  {
+    id: 'industrial-conveyors',
+    no: '03',
+    name: { vi: 'Băng tải công nghiệp', en: 'Industrial Conveyors' },
+    short: { vi: 'Băng tải con lăn, PVC, cao su, xích, Kevlar chịu nhiệt và lưới inox.', en: 'Roller, PVC, rubber, chain, Kevlar and stainless mesh conveyors.' },
+    image: '/images/catalog/1164-0.webp',
+    placeholder: 'conveyor',
+    children: [
+      { id: 'bang-tai-con-lan', name: { vi: 'Băng tải con lăn', en: 'Roller Conveyors' } },
+      { id: 'bang-tai-pvc', name: { vi: 'Băng tải PVC', en: 'PVC Belt Conveyors' } },
+      { id: 'bang-tai-cao-su', name: { vi: 'Băng tải cao su', en: 'Rubber Belt Conveyors' } },
+      { id: 'bang-tai-xich', name: { vi: 'Băng tải xích', en: 'Chain Conveyors' } },
+      { id: 'bang-tai-kevlar', name: { vi: 'Băng tải Kevlar chịu nhiệt', en: 'Heat-Resistant Kevlar Belts' } },
+      { id: 'bang-tai-luoi-inox', name: { vi: 'Băng tải lưới inox', en: 'Stainless Steel Mesh Conveyors' } },
+    ],
+  },
+  {
+    id: 'mechanical-engineering',
+    no: '04',
+    name: { vi: 'Gia công cơ khí', en: 'Mechanical Engineering & Machining' },
+    short: { vi: 'Chi tiết máy, phụ kiện ngành gỗ, khung ghế nhôm, hộp giảm tốc, bộ nguồn thủy lực.', en: 'Machine parts, woodworking accessories, aluminium chair frames, gearboxes, hydraulics.' },
+    image: '/images/catalog/1336-0.webp',
+    placeholder: 'gear',
+    children: [
+      { id: 'chi-tiet-may', name: { vi: 'Chi tiết máy', en: 'Machine Parts' } },
+      { id: 'phu-kien-nganh-go', name: { vi: 'Phụ kiện ngành gỗ', en: 'Woodworking Accessories' } },
+      { id: 'khung-ghe-nhom', name: { vi: 'Khung ghế nhôm', en: 'Aluminium Chair Frames' } },
+      { id: 'hop-giam-toc', name: { vi: 'Hộp giảm tốc', en: 'Gearboxes' } },
+      { id: 'bo-nguon-thuy-luc', name: { vi: 'Bộ nguồn thủy lực', en: 'Hydraulic Power Units' } },
+    ],
+  },
+  {
+    id: 'compressors-equipment',
+    no: '05',
+    name: { vi: 'Máy nén khí & Thiết bị công nghiệp', en: 'Air Compressors & Industrial Equipment' },
+    short: { vi: 'Máy nén khí, máy sấy khí, máy hàn, máy cắt plasma và dụng cụ cầm tay FERM.', en: 'Air compressors, air dryers, welders, plasma cutters and FERM power tools.' },
+    image: '/images/catalog/1330-0.webp',
+    placeholder: 'compressor',
+    children: [
+      { id: 'may-nen-khi', name: { vi: 'Máy nén khí', en: 'Air Compressors' } },
+      { id: 'may-say-khi', name: { vi: 'Máy sấy khí', en: 'Air Dryers' } },
+      { id: 'may-han', name: { vi: 'Máy hàn', en: 'Welding Machines' } },
+      { id: 'may-cat-plasma', name: { vi: 'Máy cắt plasma', en: 'Plasma Cutters' } },
+      { id: 'may-cha-nham-kim-loai', name: { vi: 'Máy chà nhám kim loại', en: 'Metal Sanders' } },
+      { id: 'dung-cu-ferm', name: { vi: 'Dụng cụ điện cầm tay FERM', en: 'FERM Power Tools' } },
+    ],
+  },
+]
+
+export const getCategory = (id) => categories.find((c) => c.id === id)
+export const getSubcategory = (catId, subId) => getCategory(catId)?.children.find((s) => s.id === subId)

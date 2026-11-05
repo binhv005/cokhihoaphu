@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "products": "Sản phẩm",
+    "solutions": "Giải pháp",
+    "projects": "Dự án",
+    "news": "Tin tức",
+    "contact": "Liên hệ",
+    "quote": "Yêu cầu báo giá",
+    "menu": "Menu",
+    "close": "Đóng",
+    "allProducts": "Xem tất cả sản phẩm",
+    "categories": "Danh mục sản phẩm",
+    "skip": "Bỏ qua đến nội dung"
+  },
+  "common": {
+    "explore": "Khám phá",
+    "viewDetail": "Xem chi tiết",
+    "requestQuote": "Yêu cầu báo giá",
+    "contactPrice": "Liên hệ báo giá",
+    "callNow": "Gọi ngay",
+    "learnMore": "Tìm hiểu thêm",
+    "readMore": "Đọc thêm",
+    "sample": "Nội dung mẫu",
+    "illustration": "Hình minh hoạ kỹ thuật – ảnh thực tế đang cập nhật",
+    "scroll": "Cuộn để khám phá",
+    "hotline": "Hotline",
+    "contactPerson": "Người liên hệ",
+    "facebook": "Facebook",
+    "maps": "Google Maps",
+    "directions": "Chỉ đường đến Hoà Phú",
+    "photoActivity": "Ảnh hoạt động & thiết bị",
+    "close": "Đóng",
+    "prev": "Ảnh trước",
+    "next": "Ảnh sau",
+    "email": "Email",
+    "office": "Trụ sở",
+    "business": "Địa điểm kinh doanh",
+    "factory": "Nhà máy sản xuất",
+    "prevPage": "Trang trước",
+    "nextPage": "Trang sau"
+  },
+  "hero": {
+    "line1": "Giải pháp máy móc",
+    "line2": "cho sản xuất",
+    "line3": "hiện đại.",
+    "desc": "Máy chế biến gỗ, dây chuyền sản xuất, băng tải công nghiệp và gia công cơ khí cho nhà máy.",
+    "cta1": "Khám phá sản phẩm",
+    "cta2": "Yêu cầu báo giá",
+    "webglFallback": "Trình duyệt không hỗ trợ WebGL – hiển thị ảnh thay thế."
+  },
+  "scenes": {
+    "s1": {
+      "label": "The Machine",
+      "title": "Chính xác trong từng chi tiết.",
+      "desc": "Hoà Phú định hướng cung cấp máy móc và thiết bị công nghiệp phù hợp với từng công đoạn sản xuất của doanh nghiệp."
+    },
+    "s2": {
+      "label": "The Process",
+      "title": "Giải pháp cho từng công đoạn sản xuất.",
+      "desc": "Từ đầu gia công, trục chuyển động đến hệ truyền động – các nhóm thiết bị phục vụ xẻ, bào, ghép, chà nhám và hoàn thiện."
+    },
+    "s3": {
+      "label": "The Production Line",
+      "title": "Kết nối các công đoạn sản xuất.",
+      "desc": "Dây chuyền finger / ghép tự động, dây chuyền sơn và sấy UV ván sàn, dây chuyền sơn tấm tự động."
+    },
+    "s4": {
+      "label": "Industrial Movement",
+      "title": "Vận hành liên tục. Kết nối hiệu quả.",
+      "desc": "Băng tải con lăn, PVC, cao su, xích, Kevlar chịu nhiệt và lưới inox."
+    },
+    "s5": {
+      "label": "Engineering",
+      "title": "Giải pháp cơ khí cho nhu cầu sản xuất.",
+      "desc": "Chi tiết máy, phụ kiện ngành gỗ, hộp giảm tốc và bộ nguồn thủy lực."
+    },
+    "s6": {
+      "label": "Hoà Phú",
+      "title": "Hoà Phú – đồng hành cùng hoạt động sản xuất.",
+      "cta": "Khám phá danh mục sản phẩm"
+    }
+  },
+  "home": {
+    "catEyebrow": "Danh mục sản phẩm",
+    "catTitle": "Thiết bị cho từng công đoạn.",
+    "featEyebrow": "Sản phẩm nổi bật",
+    "featTitle": "Máy móc tiêu biểu.",
+    "whyTitle": "Một đầu mối cho máy móc nhà xưởng.",
+    "why": [
+      "Tự sản xuất & chế tạo máy",
+      "Máy nhập khẩu Nhật – Âu – Đài Loan",
+      "Máy gỗ qua sử dụng",
+      "Gia công cơ khí theo yêu cầu",
+      "Tư vấn hệ thống đồng bộ"
+    ],
+    "solEyebrow": "Giải pháp",
+    "solTitle": "Giải pháp cho ngành chế biến gỗ.",
+    "solCta": "Tìm hiểu giải pháp",
+    "appTitle": "Thiết bị cho nhiều lĩnh vực sản xuất.",
+    "apps": [
+      "Nhà máy chế biến gỗ",
+      "Sản xuất đồ gỗ nội thất",
+      "Sản xuất ván sàn",
+      "Nhà máy gỗ xuất khẩu",
+      "Dây chuyền công nghiệp"
+    ],
+    "projEyebrow": "Dự án & hoạt động",
+    "projTitle": "Dự án & hoạt động tiêu biểu.",
+    "projNote": "Ảnh thực tế tại xưởng và triển lãm.",
+    "projCta": "Xem thư viện hình ảnh",
+    "partnersTitle": "Đối tác",
+    "newsEyebrow": "Tin tức",
+    "newsTitle": "Tin tức & kiến thức kỹ thuật.",
+    "newsCta": "Tất cả bài viết",
+    "faqTitle": "Giải đáp nhanh.",
+    "aboutTitle": "Giới thiệu Hoà Phú.",
+    "aboutP2": "Nhà sản xuất, chế tạo máy – đồng thời cung ứng máy nhập khẩu Nhật Bản, Châu Âu, Đài Loan và máy qua sử dụng.",
+    "ctaTitle1": "Cùng Hoà Phú",
+    "ctaTitle2": "kiến tạo giải pháp sản xuất.",
+    "ctaDesc": "Trao đổi nhu cầu để chọn thiết bị phù hợp.",
+    "ctaBtn": "Gửi yêu cầu báo giá"
+  },
+  "about": {
+    "eyebrow": "Về chúng tôi",
+    "title": "Giới thiệu Công ty TNHH Cơ Khí Hoà Phú",
+    "desc": "Là một nhà sản xuất, chế tạo máy chuyên nghiệp với mục tiêu mang lại sự tiện ích, nâng cao năng suất và hiệu quả trong sản xuất kinh doanh của quý doanh nghiệp.",
+    "overviewTitle": "Nhà sản xuất, chế tạo máy chuyên nghiệp.",
+    "fieldsTitle": "Lĩnh vực hoạt động.",
+    "placeholderNote": "Nội dung theo trang Giới thiệu của website chính thức hoaphuco.com.vn.",
+    "galleryTitle": "Nhà xưởng & máy móc.",
+    "ctaTitle": "Trao đổi nhu cầu cùng Hoà Phú.",
+    "p2": "Ngoài các sản phẩm cơ khí được sản xuất và chế tạo, Hoà Phú còn cung ứng các sản phẩm thương mại nhập khẩu từ Nhật Bản, Châu Âu, Đài Loan và những sản phẩm qua sử dụng – giúp khách hàng có một hệ thống đồng bộ với chi phí hợp lý nhất.",
+    "p3": "Chúng tôi không ngừng nghiên cứu, cải tiến chất lượng và phát triển sản phẩm mới phù hợp với điều kiện sản xuất của từng doanh nghiệp tại Việt Nam."
+  },
+  "products": {
+    "eyebrow": "Danh mục thiết bị",
+    "title": "Sản phẩm",
+    "desc": "Tra cứu theo danh mục, loại máy hoặc tên sản phẩm.",
+    "search": "Tìm theo tên hoặc mã sản phẩm…",
+    "categories": "Danh mục",
+    "all": "Tất cả sản phẩm",
+    "type": "Loại máy",
+    "allTypes": "Tất cả loại máy",
+    "condition": "Tình trạng",
+    "new": "Mới",
+    "used": "Đã qua sử dụng",
+    "sort": "Sắp xếp",
+    "sortDefault": "Mặc định",
+    "sortAZ": "Tên A–Z",
+    "sortZA": "Tên Z–A",
+    "clear": "Xóa bộ lọc",
+    "filters": "Bộ lọc",
+    "results": "{{count}} sản phẩm",
+    "noResults": "Không tìm thấy sản phẩm phù hợp.",
+    "apply": "Xem kết quả",
+    "line": "Dòng máy",
+    "showing": "hiển thị {{from}}–{{to}}"
+  },
+  "detail": {
+    "code": "Mã sản phẩm",
+    "type": "Loại máy",
+    "condition": "Tình trạng",
+    "price": "Giá",
+    "intro": "Mô tả sản phẩm",
+    "specs": "Thông số kỹ thuật",
+    "specsEmpty": "Sản phẩm chưa có bảng thông số trên website. Vui lòng liên hệ hotline để nhận thông tin chính xác.",
+    "related": "Sản phẩm liên quan",
+    "video": "Video giới thiệu",
+    "line": "Dòng máy",
+    "source": "Thông tin & hình ảnh theo website chính thức"
+  },
+  "solutions": {
+    "eyebrow": "Giải pháp & dây chuyền",
+    "title": "Giải pháp cho từng công đoạn sản xuất.",
+    "desc": "Thiết bị và dây chuyền cho ngành chế biến gỗ.",
+    "related": "Thiết bị liên quan",
+    "cta": "Tư vấn giải pháp",
+    "note": "Phạm vi thiết kế / chế tạo dây chuyền theo yêu cầu sẽ được xác nhận khi trao đổi trực tiếp."
+  },
+  "projects": {
+    "eyebrow": "Dự án & hoạt động",
+    "title": "Hình ảnh hoạt động & thiết bị.",
+    "desc": "Thiết bị và hoạt động thực tế của Hoà Phú.",
+    "intro": "Ảnh hoạt động và thiết bị thực tế – không phải dự án khách hàng.",
+    "all": "Tất cả",
+    "empty": "Chưa có hình ảnh cho lĩnh vực này."
+  },
+  "news": {
+    "eyebrow": "Tin tức & kiến thức",
+    "title": "Tin tức kỹ thuật.",
+    "desc": "Kiến thức về máy móc, dây chuyền và băng tải.",
+    "search": "Tìm bài viết…",
+    "categories": "Chuyên mục",
+    "all": "Tất cả",
+    "empty": "Không có bài viết phù hợp.",
+    "related": "Bài viết liên quan",
+    "share": "Chia sẻ",
+    "copy": "Sao chép liên kết",
+    "copied": "Đã sao chép",
+    "sampleNote": "Đây là bài viết mẫu, sẽ được thay bằng nội dung chính thức của doanh nghiệp.",
+    "page": "Trang"
+  },
+  "contact": {
+    "eyebrow": "Liên hệ",
+    "title": "Liên hệ với Hoà Phú",
+    "desc": "Gửi nhu cầu về máy móc, thiết bị và giải pháp sản xuất.",
+    "formTitle": "Gửi thông tin tư vấn.",
+    "mapTitle": "Vị trí."
+  },
+  "quote": {
+    "eyebrow": "Request a Quote",
+    "title": "Yêu cầu báo giá",
+    "desc": "Cho Hoà Phú biết thiết bị bạn quan tâm, chúng tôi sẽ liên hệ tư vấn.",
+    "s1": "Thông tin liên hệ",
+    "s2": "Thiết bị quan tâm",
+    "s3": "Nhu cầu",
+    "steps": [
+      "Gửi thông tin thiết bị và nhu cầu",
+      "Hoà Phú tiếp nhận yêu cầu",
+      "Trao đổi & tư vấn qua điện thoại"
+    ],
+    "process": "Quy trình",
+    "prefilled": "Đã điền sẵn sản phẩm từ trang chi tiết"
+  },
+  "form": {
+    "name": "Họ và tên",
+    "company": "Tên công ty",
+    "companyQ": "Tên doanh nghiệp",
+    "phone": "Số điện thoại",
+    "email": "Email",
+    "address": "Địa chỉ",
+    "message": "Nội dung cần tư vấn",
+    "product": "Sản phẩm quan tâm",
+    "productPh": "Ví dụ: Máy chà nhám thùng",
+    "category": "Danh mục sản phẩm",
+    "selectCategory": "— Chọn danh mục —",
+    "quantity": "Số lượng dự kiến",
+    "usage": "Nhu cầu sử dụng",
+    "usagePh": "Công đoạn, loại vật liệu, sản lượng mong muốn…",
+    "extra": "Thông tin bổ sung",
+    "file": "File / bản vẽ kỹ thuật",
+    "fileDisabled": "Tính năng tải file sẽ được kích hoạt khi hệ thống backend hỗ trợ.",
+    "agree": "Tôi đồng ý cho Hoà Phú sử dụng thông tin trên để liên hệ tư vấn theo chính sách xử lý thông tin.",
+    "required": "Bắt buộc",
+    "send": "Gửi thông tin",
+    "sendQuote": "Gửi yêu cầu báo giá",
+    "sending": "Đang gửi…",
+    "success": "Yêu cầu đã được gửi thành công. Hoà Phú sẽ liên hệ lại với bạn.",
+    "notConfigured": "Hệ thống tiếp nhận biểu mẫu trực tuyến chưa được kết nối nên thông tin CHƯA được gửi đến Hoà Phú. Dữ liệu bạn nhập vẫn được giữ nguyên – vui lòng gọi hotline 0913 813 412 để được hỗ trợ ngay.",
+    "error": "Gửi không thành công. Dữ liệu của bạn vẫn được giữ lại, vui lòng thử lại hoặc gọi hotline 0913 813 412.",
+    "err": {
+      "name": "Vui lòng nhập họ và tên (tối thiểu 2 ký tự).",
+      "phone": "Số điện thoại không hợp lệ (ví dụ: 0913 813 412).",
+      "email": "Email không hợp lệ.",
+      "product": "Vui lòng nhập sản phẩm quan tâm.",
+      "message": "Vui lòng nhập nội dung (tối thiểu 10 ký tự).",
+      "agree": "Vui lòng đồng ý với chính sách xử lý thông tin.",
+      "quantity": "Số lượng phải là số nguyên dương."
+    }
+  },
+  "footer": {
+    "desc": "Máy chế biến gỗ, dây chuyền sản xuất, băng tải công nghiệp và gia công cơ khí.",
+    "categories": "Danh mục",
+    "links": "Liên kết",
+    "contact": "Liên hệ",
+    "rights": "Copyright © 2026 Công ty TNHH Cơ Khí Hoà Phú.",
+    "privacy": "Chính sách bảo mật: đang cập nhật"
+  },
+  "floating": {
+    "call": "Gọi 0913 813 412",
+    "zalo": "Chat Zalo",
+    "messenger": "Messenger",
+    "top": "Lên đầu trang",
+    "open": "Liên hệ nhanh",
+    "close": "Đóng liên hệ nhanh"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang.",
+    "desc": "Đường dẫn bạn truy cập không tồn tại hoặc đã được thay đổi.",
+    "home": "Về trang chủ",
+    "products": "Xem sản phẩm"
+  },
+  "seo": {
+    "home": "Hoà Phú – Máy chế biến gỗ, dây chuyền sản xuất & băng tải công nghiệp",
+    "homeDesc": "Công ty TNHH Cơ Khí Hoà Phú cung cấp máy chế biến gỗ mới và đã qua sử dụng, dây chuyền sản xuất, băng tải công nghiệp, gia công cơ khí và máy nén khí tại TP. Hồ Chí Minh.",
+    "about": "Giới thiệu Công ty TNHH Cơ Khí Hoà Phú",
+    "products": "Sản phẩm – Máy chế biến gỗ, băng tải, thiết bị công nghiệp",
+    "solutions": "Giải pháp & dây chuyền sản xuất ngành gỗ",
+    "projects": "Hình ảnh hoạt động & thiết bị",
+    "news": "Tin tức & kiến thức kỹ thuật",
+    "contact": "Liên hệ Hoà Phú",
+    "quote": "Yêu cầu báo giá máy móc",
+    "notFound": "Không tìm thấy trang"
+  }
+}

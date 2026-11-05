@@ -1,0 +1,58 @@
+// Nhóm giải pháp – thiết bị liên quan lấy từ danh mục thật (hoaphuco.com.vn).
+export const solutions = [
+  {
+    id: 'woodworking',
+    no: '01',
+    title: { vi: 'Giải pháp máy móc chế biến gỗ', en: 'Woodworking machinery solutions' },
+    desc: { vi: 'Lựa chọn máy ghép, cưa, bào, chà nhám, phay, khoan, dán cạnh và CNC phù hợp với từng công đoạn của xưởng chế biến gỗ.', en: 'Selecting clamping, sawing, planing, sanding, shaping, boring, edge-banding and CNC machines for each workshop stage.' },
+    image: '/images/catalog/1149-0.webp',
+    products: ['may-ghep-ngang-cao-quay', 'may-cha-nham-thung-yolets', 'may-bao-4-mat-ga-gaujing', 'may-cnc-6-dau-japan-om'],
+    applications: { vi: ['Xưởng mộc', 'Nhà máy nội thất', 'Xưởng gỗ xuất khẩu'], en: ['Joinery workshops', 'Furniture plants', 'Export wood factories'] },
+  },
+  {
+    id: 'finger',
+    no: '02',
+    title: { vi: 'Dây chuyền finger / ghép tự động', en: 'Finger-jointing / auto clamping lines' },
+    desc: { vi: 'Thiết bị cho quy trình phay finger, ghép nối phôi ngắn và ép ghép tấm, phục vụ sản xuất ván ghép.', en: 'Equipment for finger milling, short-stock jointing and panel clamping for edge-glued panel production.' },
+    image: '/images/catalog/1194-0.webp',
+    products: ['day-chuyen-cat-finger-va-ghep-doc-tu-dong', 'may-phay-mong-finger-tu-dong', 'may-ghep-doc-tu-dong', 'may-ghep-ngang-cao-quay'],
+    applications: { vi: ['Ván ghép thanh', 'Phôi ghép dài', 'Tấm ghép nội thất'], en: ['Finger-jointed boards', 'Long jointed stock', 'Furniture panels'] },
+  },
+  {
+    id: 'uv-flooring',
+    no: '03',
+    title: { vi: 'Dây chuyền sơn và sấy UV ván sàn', en: 'UV flooring coating & curing lines' },
+    desc: { vi: 'Các công đoạn chà nhám, phủ sơn và sấy UV / hồng ngoại liên tục cho bề mặt ván sàn.', en: 'Continuous sanding, coating and UV / infrared curing stages for flooring surfaces.' },
+    image: '/images/catalog/1193-0.webp',
+    products: ['day-chuyen-son-say-van-san-go', 'day-chuyen-son-say-iruv', 'may-say-tia-cuc-tim', 'may-say-hong-ngoai'],
+    applications: { vi: ['Ván sàn gỗ', 'Tấm phủ bề mặt', 'Nhà máy ván sàn'], en: ['Wood flooring', 'Surface-coated panels', 'Flooring plants'] },
+  },
+  {
+    id: 'panel-coating',
+    no: '04',
+    title: { vi: 'Dây chuyền sơn tấm tự động', en: 'Automatic panel coating lines' },
+    desc: { vi: 'Thiết bị phủ sơn tấm tự động kết hợp băng tải vận chuyển, giúp quá trình hoàn thiện bề mặt liên tục.', en: 'Automatic panel coating equipment combined with conveyors for continuous surface finishing.' },
+    image: '/images/catalog/1327-0.webp',
+    products: ['day-chuyen-san-xuat-va-son-say-uv-van-san', 'may-say-tia-cuc-tim', 'bang-tai-con-lan', 'bang-tai-belt-pvc-tu-dong'],
+    applications: { vi: ['Tấm nội thất', 'Cửa gỗ', 'Ván công nghiệp'], en: ['Furniture panels', 'Wooden doors', 'Engineered boards'] },
+  },
+  {
+    id: 'conveyor',
+    no: '05',
+    title: { vi: 'Giải pháp băng tải công nghiệp', en: 'Industrial conveyor solutions' },
+    desc: { vi: 'Băng tải con lăn, PVC, cao su, xích, Kevlar chịu nhiệt và lưới inox cho vận chuyển vật liệu giữa các công đoạn.', en: 'Roller, PVC, rubber, chain, heat-resistant Kevlar and stainless mesh conveyors for inter-stage transfer.' },
+    image: null, // chưa có ảnh băng tải thực tế → hình minh hoạ
+    placeholder: 'conveyor',
+    products: ['bang-tai-con-lan', 'bang-tai-pvc', 'bang-tai-kevlar', 'bang-tai-luoi-inox'],
+    applications: { vi: ['Dây chuyền sơn sấy', 'Đóng gói', 'Vận chuyển phôi'], en: ['Coating & curing lines', 'Packing', 'Stock transfer'] },
+  },
+  {
+    id: 'auxiliary',
+    no: '06',
+    title: { vi: 'Giải pháp thiết bị phụ trợ nhà máy', en: 'Plant auxiliary equipment' },
+    desc: { vi: 'Máy nén khí, máy sấy khí, máy hàn, máy cắt plasma, bộ nguồn thủy lực và dụng cụ cầm tay hỗ trợ vận hành nhà máy.', en: 'Compressors, air dryers, welders, plasma cutters, hydraulic units and power tools supporting plant operation.' },
+    image: '/images/catalog/1330-0.webp',
+    products: ['may-nen-khi-truc-vis-may-say-khi-75-kw', 'che-tao-bo-nguon-thuy-luc', 'may-han-migmag', 'may-cat-plasma'],
+    applications: { vi: ['Hệ thống khí nén', 'Bảo trì cơ khí', 'Thủy lực cho máy ép'], en: ['Compressed air systems', 'Mechanical maintenance', 'Hydraulics for presses'] },
+  },
+]
