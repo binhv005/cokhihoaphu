@@ -19,7 +19,7 @@ export default function Solutions() {
 
   return (
     <>
-      <PageHero eyebrow={t('solutions.eyebrow')} title={t('solutions.title')} desc={t('solutions.desc')} breadcrumb={[{ label: t('nav.solutions') }]} image="/images/products/p58.webp" index="04" />
+      <PageHero eyebrow={t('solutions.eyebrow')} title={t('solutions.title')} desc={t('solutions.desc')} breadcrumb={[{ label: t('nav.solutions') }]} image={['/images/products/p58.webp', '/images/products/p34.webp', '/images/products/p12.webp', '/images/products/p65.webp', '/images/products/p07.webp']} index="04" />
 
       <div className="bg-paper">
         {solutions.map((s, i) => {

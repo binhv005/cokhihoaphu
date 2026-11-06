@@ -7,6 +7,8 @@ import Button from '../common/Button'
 import Reveal, { LineReveal } from '../common/Reveal'
 import { ROUTES } from '../../constants/routes'
 import { hasWebGL } from '../../utils/format'
+import { getLenis } from '../../hooks/useSmoothScroll'
+import { ChevronsDown } from 'lucide-react'
 
 gsap.registerPlugin(ScrollTrigger)
 const IndustrialScene = lazy(() => import('../three/IndustrialScene'))
@@ -64,6 +66,17 @@ export default function HeroSection() {
     return () => { st.kill(); io.disconnect() }
   }, [scenes.length])
 
+  // hiện nút "Bỏ qua" khi hero đang trên màn hình và chưa tới cảnh cuối
+  const showSkip = active && scene < scenes.length
+  const skip = () => {
+    const el = wrap.current
+    if (!el) return
+    const target = el.getBoundingClientRect().bottom + window.scrollY
+    const lenis = getLenis()
+    if (lenis) lenis.scrollTo(target, { duration: 1.2 })
+    else window.scrollTo({ top: target, behavior: reduce ? 'auto' : 'smooth' })
+  }
+
   const D = 0.35 // delay cơ sở cho chuỗi xuất hiện
 
   return (
@@ -90,6 +103,18 @@ export default function HeroSection() {
         <div className="grain pointer-events-none absolute inset-0 opacity-70" aria-hidden />
       </div>
 
+      {/* ===== Nút bỏ qua phần cuộn 3D – chỉ hiện khi đang ở trong hero ===== */}
+      <button
+        type="button"
+        onClick={skip}
+        tabIndex={showSkip ? 0 : -1}
+        aria-hidden={!showSkip}
+        className={`group fixed bottom-6 left-1/2 z-[6] flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/25 bg-ink/50 px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.2em] text-white/80 backdrop-blur-md transition-[opacity,background-color,color] duration-500 hover:bg-white hover:text-ink md:bottom-8 ${showSkip ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
+      >
+        {t('hero.skip')}
+        <ChevronsDown size={16} strokeWidth={1.8} className="motion-safe:animate-bounce group-hover:animate-none" aria-hidden />
+      </button>
+
       {/* ===== Nội dung cuộn phía trên ===== */}
       <div className="relative z-[5] -mt-[100svh]">
         {/* HERO */}
@@ -97,7 +122,7 @@ export default function HeroSection() {
           <div className="grid items-end gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
               <h1 className="h-display">
-                <LineReveal lines={[t('hero.line1'), t('hero.line2'), t('hero.line3')]} animateOnMount delay={D + 0.2} lastClass="text-accent" />
+                <LineReveal lines={[t('hero.line1'), t('hero.line2')]} animateOnMount delay={D + 0.2} lastClass="text-accent" />
               </h1>
               <m.p className="lead mt-8 max-w-xl text-white/70" initial={reduce ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: D + 0.9, duration: 0.9 }}>
                 {t('hero.desc')}

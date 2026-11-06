@@ -25,7 +25,7 @@ export default function RequestQuote() {
 
   return (
     <>
-      <PageHero eyebrow={t('quote.eyebrow')} title={t('quote.title')} desc={t('quote.desc')} breadcrumb={[{ label: t('nav.quote') }]} image="/images/products/p55.webp" compact />
+      <PageHero eyebrow={t('quote.eyebrow')} title={t('quote.title')} desc={t('quote.desc')} breadcrumb={[{ label: t('nav.quote') }]} image={['/images/products/p55.webp', '/images/products/p28.webp', '/images/products/p14.webp', '/images/products/p58.webp', '/images/products/p49.webp']} compact />
       <section className="bg-paper py-16 md:py-20">
         <Container className="grid gap-14 lg:grid-cols-12">
           <div className="lg:col-span-7">

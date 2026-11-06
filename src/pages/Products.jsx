@@ -15,6 +15,8 @@ import { breadcrumbLd, useSeo } from '../hooks/useSeo'
 import { getLenis } from '../hooks/useSmoothScroll'
 
 const PER_PAGE = 12
+// ảnh nền hero trang Sản phẩm (chưa chọn danh mục) – lưới ghép, ảnh đầu là ảnh lớn
+const HERO_IMAGES = ['/images/products/p55.webp', ...categories.slice(0, 4).map((c) => c.image)]
 
 export default function Products() {
   const { t } = useTranslation()
@@ -62,7 +64,7 @@ export default function Products() {
 
   return (
     <>
-      <PageHero eyebrow={t('products.eyebrow')} title={title} desc={cat ? L(cat.short) : t('products.desc')} breadcrumb={crumbs} image={cat?.image ?? '/images/products/p55.webp'} compact index="03">
+      <PageHero eyebrow={t('products.eyebrow')} title={title} desc={cat ? L(cat.short) : t('products.desc')} breadcrumb={crumbs} image={cat ? cat.image : HERO_IMAGES} compact index="03">
         <div className="max-w-xl"><ProductSearch dark value={value.q} onChange={(q) => update({ q })} /></div>
       </PageHero>
 

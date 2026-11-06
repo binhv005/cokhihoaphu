@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import HeroSection from '../components/sections/HeroSection'
 import AboutIntroSection from '../components/sections/AboutIntroSection'
 import CategorySection from '../components/sections/CategorySection'
+import CategoryMarquee from '../components/sections/CategoryMarquee'
 import FeaturedProducts from '../components/sections/FeaturedProducts'
 import WhyChooseUs from '../components/sections/WhyChooseUs'
 import SolutionsSection from '../components/sections/SolutionsSection'
@@ -18,6 +19,7 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutIntroSection />
+      <CategoryMarquee />
       <CategorySection />
       <FeaturedProducts />
       <WhyChooseUs />
@@ -25,6 +27,7 @@ export default function Home() {
       <ApplicationsSection />
       <ProjectsSection />
       <NewsSection />
+      <CategoryMarquee reverse />
       <FaqSection />
     </>
   )

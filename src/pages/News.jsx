@@ -44,7 +44,7 @@ export default function News() {
 
   return (
     <>
-      <PageHero eyebrow={t('news.eyebrow')} title={t('news.title')} desc={t('news.desc')} breadcrumb={[{ label: t('nav.news') }]} image="/images/products/p21.webp" compact index="06" />
+      <PageHero eyebrow={t('news.eyebrow')} title={t('news.title')} desc={t('news.desc')} breadcrumb={[{ label: t('nav.news') }]} image={['/images/products/p21.webp', '/images/products/p12.webp', '/images/products/p39.webp', '/images/products/p02.webp', '/images/products/p51.webp']} compact index="06" />
 
       {!cat && !q && featured && (
         <section className="bg-white py-16 md:py-20">

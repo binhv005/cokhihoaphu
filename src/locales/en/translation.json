@@ -15,6 +15,8 @@
     "skip": "Skip to content"
   },
   "common": {
+    "prevShort": "Prev",
+    "nextShort": "Next",
     "explore": "Explore",
     "viewDetail": "View details",
     "requestQuote": "Request a Quote",
@@ -32,12 +34,12 @@
     "nextPage": "Next page"
   },
   "hero": {
-    "line1": "Engineering",
-    "line2": "the future",
-    "line3": "of industry.",
+    "line1": "Machinery for",
+    "line2": "modern industry.",
     "desc": "Woodworking machinery, production lines, industrial conveyors and mechanical machining for factories.",
     "cta1": "Explore products",
     "cta2": "Request a Quote",
+    "skip": "Skip intro",
     "webglFallback": "WebGL is not supported – showing a fallback image."
   },
   "scenes": {
@@ -48,7 +50,7 @@
     },
     "s2": {
       "label": "The Process",
-      "title": "Solutions for every production stage.",
+      "title": "Solutions for every stage.",
       "desc": "Cutting heads, motion axes and drive systems – equipment for sawing, planing, clamping, sanding and finishing."
     },
     "s3": {
@@ -85,8 +87,16 @@
       "Custom mechanical machining",
       "Complete-system advice"
     ],
+    "whyDesc": [
+      "Our own machine shop designs and builds machines to your needs.",
+      "Genuine machines sourced from Japan, Europe and Taiwan.",
+      "Inspected, serviced used machines – a lower-cost investment.",
+      "Parts and spares machined to your drawing or sample.",
+      "Site surveys and advice on complete lines for the whole plant."
+    ],
     "solEyebrow": "Solutions",
     "solTitle": "Solutions for the wood industry.",
+    "solDesc": "From single machines to complete lines – Hoa Phu advises on, supplies and installs equipment for every stage: sawing, jointing, coating, curing and in-plant handling.",
     "solCta": "Explore solutions",
     "appTitle": "Equipment for many industries.",
     "apps": [
@@ -110,7 +120,7 @@
   },
   "about": {
     "eyebrow": "About us",
-    "title": "About Hoa Phu Mechanical Co., Ltd",
+    "title": "About Hoa Phu.",
     "desc": "A professional machine manufacturer whose goal is to bring convenience and raise productivity and efficiency for our customers’ businesses.",
     "overviewTitle": "A professional machinery manufacturer.",
     "fieldsTitle": "Fields of activity.",
@@ -157,7 +167,7 @@
   },
   "solutions": {
     "eyebrow": "Solutions & lines",
-    "title": "Solutions for every production stage.",
+    "title": "Solutions for every stage.",
     "desc": "Equipment and lines for the wood processing industry.",
     "related": "Related equipment",
     "cta": "Get solution advice",
@@ -165,7 +175,7 @@
   },
   "projects": {
     "eyebrow": "Projects & activities",
-    "title": "Activity & equipment gallery.",
+    "title": "Activity & equipment.",
     "desc": "Hoa Phu’s real equipment and activities.",
     "all": "All",
     "empty": "No images in this field yet."
@@ -243,6 +253,8 @@
     }
   },
   "footer": {
+    "tagline": "Your partner in production",
+    "quick": "Quick links",
     "desc": "Woodworking machinery, production lines, industrial conveyors and mechanical machining.",
     "categories": "Categories",
     "links": "Links",

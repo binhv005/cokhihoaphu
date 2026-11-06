@@ -15,6 +15,8 @@
     "skip": "Bỏ qua đến nội dung"
   },
   "common": {
+    "prevShort": "Trước",
+    "nextShort": "Sau",
     "explore": "Khám phá",
     "viewDetail": "Xem chi tiết",
     "requestQuote": "Yêu cầu báo giá",
@@ -33,11 +35,11 @@
   },
   "hero": {
     "line1": "Giải pháp máy móc",
-    "line2": "cho sản xuất",
-    "line3": "hiện đại.",
+    "line2": "sản xuất hiện đại.",
     "desc": "Máy chế biến gỗ, dây chuyền sản xuất, băng tải công nghiệp và gia công cơ khí cho nhà máy.",
     "cta1": "Khám phá sản phẩm",
     "cta2": "Yêu cầu báo giá",
+    "skip": "Bỏ qua",
     "webglFallback": "Trình duyệt không hỗ trợ WebGL – hiển thị ảnh thay thế."
   },
   "scenes": {
@@ -48,7 +50,7 @@
     },
     "s2": {
       "label": "The Process",
-      "title": "Giải pháp cho từng công đoạn sản xuất.",
+      "title": "Giải pháp cho từng công đoạn.",
       "desc": "Từ đầu gia công, trục chuyển động đến hệ truyền động – các nhóm thiết bị phục vụ xẻ, bào, ghép, chà nhám và hoàn thiện."
     },
     "s3": {
@@ -85,8 +87,16 @@
       "Gia công cơ khí theo yêu cầu",
       "Tư vấn hệ thống đồng bộ"
     ],
+    "whyDesc": [
+      "Xưởng cơ khí riêng, chủ động thiết kế và chế tạo máy theo nhu cầu.",
+      "Nguồn máy chính hãng từ Nhật Bản, châu Âu và Đài Loan.",
+      "Máy gỗ đã qua kiểm tra, bảo dưỡng – tiết kiệm chi phí đầu tư.",
+      "Gia công chi tiết, phụ tùng thay thế theo bản vẽ hoặc mẫu.",
+      "Khảo sát và tư vấn dây chuyền đồng bộ cho cả nhà xưởng."
+    ],
     "solEyebrow": "Giải pháp",
     "solTitle": "Giải pháp cho ngành chế biến gỗ.",
+    "solDesc": "Từ máy đơn lẻ đến dây chuyền đồng bộ – Hoà Phú tư vấn, cung cấp và lắp đặt thiết bị phù hợp với từng công đoạn: xẻ, ghép, sơn, sấy và vận chuyển trong nhà máy.",
     "solCta": "Tìm hiểu giải pháp",
     "appTitle": "Thiết bị cho nhiều lĩnh vực sản xuất.",
     "apps": [
@@ -110,7 +120,7 @@
   },
   "about": {
     "eyebrow": "Về chúng tôi",
-    "title": "Giới thiệu Công ty TNHH Cơ Khí Hoà Phú",
+    "title": "Về Hoà Phú.",
     "desc": "Là một nhà sản xuất, chế tạo máy chuyên nghiệp với mục tiêu mang lại sự tiện ích, nâng cao năng suất và hiệu quả trong sản xuất kinh doanh của quý doanh nghiệp.",
     "overviewTitle": "Nhà sản xuất, chế tạo máy chuyên nghiệp.",
     "fieldsTitle": "Lĩnh vực hoạt động.",
@@ -157,7 +167,7 @@
   },
   "solutions": {
     "eyebrow": "Giải pháp & dây chuyền",
-    "title": "Giải pháp cho từng công đoạn sản xuất.",
+    "title": "Giải pháp cho từng công đoạn.",
     "desc": "Thiết bị và dây chuyền cho ngành chế biến gỗ.",
     "related": "Thiết bị liên quan",
     "cta": "Tư vấn giải pháp",
@@ -165,7 +175,7 @@
   },
   "projects": {
     "eyebrow": "Dự án & hoạt động",
-    "title": "Hình ảnh hoạt động & thiết bị.",
+    "title": "Hoạt động & thiết bị.",
     "desc": "Thiết bị và hoạt động thực tế của Hoà Phú.",
     "all": "Tất cả",
     "empty": "Chưa có hình ảnh cho lĩnh vực này."
@@ -243,6 +253,8 @@
     }
   },
   "footer": {
+    "tagline": "Đồng hành cùng hoạt động sản xuất",
+    "quick": "Truy cập nhanh",
     "desc": "Máy chế biến gỗ, dây chuyền sản xuất, băng tải công nghiệp và gia công cơ khí.",
     "categories": "Danh mục",
     "links": "Liên kết",

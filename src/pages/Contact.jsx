@@ -23,7 +23,7 @@ export default function Contact() {
 
   return (
     <>
-      <PageHero eyebrow={t('contact.eyebrow')} title={t('contact.title')} desc={t('contact.desc')} breadcrumb={[{ label: t('nav.contact') }]} image="/images/products/p49.webp" index="07" />
+      <PageHero eyebrow={t('contact.eyebrow')} title={t('contact.title')} desc={t('contact.desc')} breadcrumb={[{ label: t('nav.contact') }]} image={['/images/products/p49.webp', '/images/products/p07.webp', '/images/products/p58.webp', '/images/products/p00.webp', '/images/products/p65.webp']} index="07" />
 
       <section className="bg-paper py-16 md:py-20">
         <Container>

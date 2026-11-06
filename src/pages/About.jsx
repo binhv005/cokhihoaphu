@@ -8,6 +8,7 @@ import Reveal from '../components/common/Reveal'
 import SmartImage from '../components/common/SmartImage'
 import Lightbox from '../components/common/Lightbox'
 import { fields } from '../data/company'
+import { getCategory } from '../data/categories'
 import { useLocalized } from '../hooks/useLocalized'
 import { breadcrumbLd, organizationLd, useSeo } from '../hooks/useSeo'
 import { ROUTES } from '../constants/routes'
@@ -22,7 +23,7 @@ export default function About() {
 
   return (
     <>
-      <PageHero eyebrow={t('about.eyebrow')} title={t('about.title')} breadcrumb={[{ label: t('nav.about') }]} image="/images/products/p00.webp" index="02" />
+      <PageHero eyebrow={t('about.eyebrow')} title={t('about.title')} breadcrumb={[{ label: t('nav.about') }]} image={['/images/products/p00.webp', '/images/products/p14.webp', '/images/products/p39.webp', '/images/products/p51.webp', '/images/products/p28.webp']} index="02" />
 
       {/* Tổng quan */}
       <section className="bg-paper py-16 md:py-20">
@@ -43,16 +44,32 @@ export default function About() {
       <section className="bg-white py-16 md:py-20">
         <Container>
           <Reveal as="h2" className="h2 text-ink">{t('about.fieldsTitle')}</Reveal>
-          <ol className="mt-12 border-t border-text/15">
-            {fields.map((f, i) => (
-              <Reveal as="li" key={f.id} delay={i * 0.04}>
-                <Link to={ROUTES.productsBy(f.id)} className="group flex items-baseline gap-6 border-b border-text/15 py-6 md:py-8">
-                  <span className="font-mono text-[12px] text-brand-deep">{f.no}</span>
-                  <span className="flex-1 text-[clamp(1.3rem,2.4vw,2rem)] font-medium tracking-[-0.02em] text-ink transition-colors group-hover:text-navy">{L(f.title)}</span>
-                  <ArrowUpRight size={22} strokeWidth={1.4} className="self-center text-muted transition-colors group-hover:text-brand-deep" />
-                </Link>
-              </Reveal>
-            ))}
+          {/* lưới thẻ ảnh: thẻ 01 lớn (2 hàng), 4 thẻ còn lại xếp 2×2 */}
+          <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
+            {fields.map((f, i) => {
+              const big = i === 0
+              return (
+                <Reveal as="li" key={f.id} delay={i * 0.05} className={big ? 'sm:col-span-2 lg:col-span-1 lg:row-span-2' : ''}>
+                  <Link
+                    to={ROUTES.productsBy(f.id)}
+                    className={`group relative isolate flex h-full flex-col justify-end overflow-hidden bg-ink p-6 text-white md:p-7 ${big ? 'min-h-[340px] lg:min-h-[560px]' : 'min-h-[260px]'}`}
+                  >
+                    {getCategory(f.id)?.image && (
+                      <img src={getCategory(f.id).image} alt="" loading="lazy" decoding="async" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-75 transition-transform duration-700 ease-out group-hover:scale-105" />
+                    )}
+                    <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/60 to-ink/5 transition-colors duration-500 group-hover:from-navy group-hover:via-navy/70" aria-hidden />
+                    <div className="absolute inset-x-6 top-6 flex items-center justify-between md:inset-x-7 md:top-7">
+                      <span className="font-mono text-[12px] tracking-[0.15em] text-brand-light">{f.no}</span>
+                      <span className="grid size-10 place-items-center rounded-full border border-white/30 transition-colors duration-300 group-hover:border-brand group-hover:bg-brand group-hover:text-logo-ink">
+                        <ArrowUpRight size={18} strokeWidth={1.6} />
+                      </span>
+                    </div>
+                    <h3 className={`font-medium tracking-[-0.02em] ${big ? 'text-[clamp(1.6rem,2.6vw,2.2rem)]' : 'text-[clamp(1.25rem,1.8vw,1.5rem)]'} leading-tight`}>{L(f.title)}</h3>
+                    <p className={`mt-3 max-w-md text-[14px] leading-relaxed text-white/70 ${big ? 'md:text-[15px]' : ''}`}>{L(f.desc)}</p>
+                  </Link>
+                </Reveal>
+              )
+            })}
           </ol>
         </Container>
       </section>

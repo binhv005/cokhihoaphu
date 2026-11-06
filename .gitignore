@@ -27,3 +27,12 @@ dist-ssr
 .env
 .env.*
 !.env.example
+
+# Tư liệu / ghi chú cục bộ ở thư mục gốc – không đưa lên repo
+/.tmp/
+/Logo/
+/SanPham/
+/Ảnh đối tác/
+/clone.md
+/prompt.md
+/hoaphu-web/

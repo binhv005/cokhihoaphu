@@ -23,7 +23,7 @@ export default function Projects() {
 
   return (
     <>
-      <PageHero eyebrow={t('projects.eyebrow')} title={t('projects.title')} desc={t('projects.desc')} breadcrumb={[{ label: t('nav.projects') }]} image="/images/products/p02.webp" index="05" />
+      <PageHero eyebrow={t('projects.eyebrow')} title={t('projects.title')} desc={t('projects.desc')} breadcrumb={[{ label: t('nav.projects') }]} image={['/images/products/p02.webp', '/images/products/p21.webp', '/images/products/p49.webp', '/images/products/p55.webp', '/images/products/p34.webp']} index="05" />
 
       <section className="bg-paper py-16 md:py-20">
         <Container>
