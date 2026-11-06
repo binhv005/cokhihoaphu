@@ -4,7 +4,9 @@
   --color-navy: #12345a;
   --color-blue: #1d5687;
   --color-steel: #2c6f9e;
-  --color-orange: #f28c28;
+  --color-brand: #78a3d8;      /* xanh logo – màu chủ đạo */
+  --color-brand-light: #9fc2ec;
+  --color-brand-deep: #3b6bb0; /* xanh logo đậm – chữ nhấn trên nền sáng */
   --color-yellow: #f4b942;
   --color-metal: #89939d;
   --color-ink: #101820;
@@ -37,12 +39,12 @@
     line-height: 1.65;
     overflow-x: hidden;
   }
-  ::selection { background: var(--color-orange); color: #fff; }
+  ::selection { background: var(--color-brand-deep); color: #fff; }
   /* Không để dòng cuối chỉ còn 1 chữ: tiêu đề cân bằng dòng, đoạn văn tránh "chữ mồ côi" */
   h1, h2, h3, h4, h5, h6, legend, .h-display, .h1, .h2, .h3 { text-wrap: balance; }
   p, li, dd, dt, figcaption, label, blockquote, td, th { text-wrap: pretty; }
   img { max-width: 100%; }
-  :focus-visible { outline: 2px solid var(--color-orange); outline-offset: 3px; }
+  :focus-visible { outline: 2px solid var(--color-brand); outline-offset: 3px; }
 }
 
 @layer components {
@@ -78,7 +80,7 @@
   .btn {
     @apply relative inline-flex items-center justify-center gap-2.5 rounded-full px-6 py-3.5 text-[14px] font-medium tracking-wide transition-all duration-300 select-none whitespace-nowrap;
   }
-  .btn-primary { @apply bg-orange text-ink hover:bg-yellow; }
+  .btn-primary { @apply bg-brand text-logo-ink hover:bg-brand-light; }
   .btn-light { @apply bg-white text-ink hover:bg-paper; }
   .btn-ghost-dark { @apply border border-white/25 text-white hover:border-white hover:bg-white/5; }
   .btn-ghost-light { @apply border border-text/20 text-text hover:border-navy hover:text-navy; }
@@ -94,7 +96,12 @@
   .field {
     @apply w-full rounded-none border-0 border-b border-text/20 bg-transparent px-0 py-3 text-[15px] text-text placeholder:text-muted/70 outline-none transition-colors focus:border-navy;
   }
-  .field-dark { @apply border-white/25 text-white placeholder:text-white/40 focus:border-orange; }
+  .field-dark { @apply border-white/25 text-white placeholder:text-white/40 focus:border-brand; }
+  /* ô nhập có khung (form liên hệ) */
+  .field-box {
+    @apply mt-2 w-full rounded-none border border-line bg-paper px-4 py-3 text-[15px] text-text placeholder:text-muted/60 outline-none transition-[border-color,background-color,box-shadow] duration-200 hover:border-text/25 focus:border-brand-deep focus:bg-white focus:shadow-[0_0_0_4px_rgba(120,163,216,.25)];
+  }
+  .field-box[aria-invalid="true"] { @apply border-[#d9480f] bg-white; }
   .grain {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
   }
@@ -147,3 +154,4 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+

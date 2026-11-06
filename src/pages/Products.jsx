@@ -7,7 +7,6 @@ import Container from '../components/common/Container'
 import ProductGrid from '../components/products/ProductGrid'
 import ProductFilter from '../components/products/ProductFilter'
 import ProductSearch from '../components/products/ProductSearch'
-import CtaBand from '../components/common/CtaBand'
 import Pagination from '../components/common/Pagination'
 import { categories, getCategory, getSubcategory } from '../data/categories'
 import { useLocalized } from '../hooks/useLocalized'
@@ -85,7 +84,7 @@ export default function Products() {
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <button type="button" onClick={() => setDrawer(true)} className="btn btn-ghost-light px-4 py-2.5 lg:hidden">
-                  <SlidersHorizontal size={16} /> {t('products.filters')} {activeCount > 0 && <span className="rounded-full bg-orange px-1.5 text-[11px] text-ink">{activeCount}</span>}
+                  <SlidersHorizontal size={16} /> {t('products.filters')} {activeCount > 0 && <span className="rounded-full bg-brand px-1.5 text-[11px] text-ink">{activeCount}</span>}
                 </button>
                 <label className="flex items-center gap-2 text-[13px] text-muted">
                   <span className="sr-only sm:not-sr-only">{t('products.type')}</span>
@@ -151,7 +150,6 @@ export default function Products() {
         )}
       </AnimatePresence>
 
-      <CtaBand />
     </>
   )
 }

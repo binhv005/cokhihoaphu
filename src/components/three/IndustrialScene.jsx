@@ -95,7 +95,7 @@ function Lights({ quality, progress }) {
         shadow-camera-bottom={-12}
         shadow-bias={-0.0004}
       />
-      <pointLight ref={accent} position={[1.6, 2.8, 1.2]} color="#f28c28" distance={7} decay={1.6} intensity={6} />
+      <pointLight ref={accent} position={[1.6, 2.8, 1.2]} color="#78a3d8" distance={7} decay={1.6} intensity={6} />
       <pointLight position={[-9, 4, -6]} color="#2c6f9e" distance={16} intensity={18} decay={1.4} />
       <pointLight position={[8, 3, 3]} color="#f4b942" distance={9} intensity={8} decay={1.5} />
     </>

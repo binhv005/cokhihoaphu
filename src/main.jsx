@@ -6,6 +6,11 @@ import './i18n'
 import './index.css'
 import App from './App.jsx'
 
+// Reload luôn về đầu trang: tắt khôi phục vị trí cuộn của trình duyệt
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
+window.scrollTo(0, 0)
+window.addEventListener('beforeunload', () => window.scrollTo(0, 0))
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>

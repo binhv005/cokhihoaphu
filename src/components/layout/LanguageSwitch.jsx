@@ -12,7 +12,7 @@ export default function LanguageSwitch({ className = '' }) {
             type="button"
             onClick={() => i18n.changeLanguage(l)}
             aria-pressed={cur === l}
-            className={`px-1 py-0.5 uppercase transition-colors ${cur === l ? 'text-orange' : 'opacity-60 hover:opacity-100'}`}
+            className={`px-1 py-0.5 uppercase transition-colors ${cur === l ? 'text-brand' : 'opacity-60 hover:opacity-100'}`}
           >
             {l}
           </button>

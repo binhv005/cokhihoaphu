@@ -8,7 +8,7 @@ export const MAT = {
   darkSteel: { color: '#2b3541', metalness: 0.75, roughness: 0.45 },
   navy: { color: '#1d5687', metalness: 0.45, roughness: 0.42 },
   navyDeep: { color: '#12345a', metalness: 0.4, roughness: 0.5 },
-  orange: { color: '#f28c28', metalness: 0.3, roughness: 0.45 },
+  orange: { color: '#78a3d8', metalness: 0.35, roughness: 0.4 }, // chi tiết nhấn theo màu xanh logo
   wood: { color: '#b98352', metalness: 0, roughness: 0.75 },
   rubber: { color: '#14191f', metalness: 0.1, roughness: 0.9 },
   chrome: { color: '#d7dde3', metalness: 1, roughness: 0.15 },

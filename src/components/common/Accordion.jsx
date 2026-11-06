@@ -19,11 +19,11 @@ export default function Accordion({ items, dark = false }) {
                 aria-expanded={isOpen}
                 aria-controls={id}
                 onClick={() => setOpen(isOpen ? -1 : i)}
-                className={`flex w-full items-center gap-6 py-6 text-left text-[17px] font-medium transition-colors md:text-[19px] ${dark ? 'text-white hover:text-orange' : 'text-ink hover:text-navy'}`}
+                className={`flex w-full items-center gap-6 py-6 text-left text-[17px] font-medium transition-colors md:text-[19px] ${dark ? 'text-white hover:text-brand' : 'text-ink hover:text-navy'}`}
               >
-                <span className="font-mono text-[12px] text-orange">{String(i + 1).padStart(2, '0')}</span>
+                <span className="font-mono text-[12px] text-brand-deep">{String(i + 1).padStart(2, '0')}</span>
                 <span className="flex-1">{it.q}</span>
-                <Plus size={20} className={`shrink-0 transition-transform duration-500 ${isOpen ? 'rotate-45 text-orange' : ''}`} aria-hidden />
+                <Plus size={20} className={`shrink-0 transition-transform duration-500 ${isOpen ? 'rotate-45 text-brand-deep' : ''}`} aria-hidden />
               </button>
             </h3>
             <AnimatePresence initial={false}>

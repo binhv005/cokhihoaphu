@@ -14,7 +14,7 @@ function Group({ no, title, children }) {
   return (
     <fieldset className="grid gap-8 border-t border-text/15 pt-8 sm:grid-cols-2">
       <legend className="float-left mb-2 flex w-full items-baseline gap-3 text-[17px] font-semibold text-ink sm:col-span-2">
-        <span className="font-mono text-[12px] text-orange">{no}</span>{title}
+        <span className="font-mono text-[12px] text-brand-deep">{no}</span>{title}
       </legend>
       {children}
     </fieldset>
@@ -97,7 +97,7 @@ export default function QuoteForm({ initialProduct = '', initialCategory = '', p
       <div className="space-y-6 border-t border-text/15 pt-8">
         <label className="flex cursor-pointer items-start gap-3 text-[14px] text-text/80">
           <input type="checkbox" {...register('agree')} aria-invalid={e('agree') ? 'true' : 'false'} className="mt-1 h-4 w-4 shrink-0 accent-[#12345a]" />
-          <span>{t('form.agree')} <span className="text-orange">*</span></span>
+          <span>{t('form.agree')} <span className="text-brand-deep">*</span></span>
         </label>
         {e('agree') && <p role="alert" className="-mt-3 text-[13px] text-[#d9480f]">{t(`form.err.${e('agree')}`)}</p>}
         <FormStatus status={status} />

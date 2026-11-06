@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowUpRight, Factory, Mail, MapPin, Phone, User } from 'lucide-react'
+import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react'
 import { company } from '../../data/company'
 import { categories } from '../../data/categories'
 import { useLocalized } from '../../hooks/useLocalized'
@@ -35,7 +35,7 @@ export default function Footer() {
             <p className="eyebrow mb-5 text-white/40">{t('footer.categories')}</p>
             <ul className="space-y-2.5 text-[14px]">
               {categories.map((c) => (
-                <li key={c.id}><Link to={ROUTES.productsBy(c.id)} className="text-white/70 transition-colors hover:text-orange">{L(c.name)}</Link></li>
+                <li key={c.id}><Link to={ROUTES.productsBy(c.id)} className="text-white/70 transition-colors hover:text-brand">{L(c.name)}</Link></li>
               ))}
             </ul>
           </div>
@@ -43,19 +43,17 @@ export default function Footer() {
             <p className="eyebrow mb-5 text-white/40">{t('footer.links')}</p>
             <ul className="space-y-2.5 text-[14px]">
               {links.map((l) => (
-                <li key={l.k}><Link to={l.to} className="text-white/70 transition-colors hover:text-orange">{t(`nav.${l.k}`)}</Link></li>
+                <li key={l.k}><Link to={l.to} className="text-white/70 transition-colors hover:text-brand">{t(`nav.${l.k}`)}</Link></li>
               ))}
             </ul>
           </div>
           <div className="lg:col-span-3">
             <p className="eyebrow mb-5 text-white/40">{t('footer.contact')}</p>
             <ul className="space-y-3.5 text-[14px] text-white/70">
-              <li className="flex gap-3"><MapPin size={16} className="mt-1 shrink-0 text-orange" aria-hidden /><a href={company.mapsLink} target="_blank" rel="noopener noreferrer" className="hover:text-white">{company.address}</a></li>
-              <li className="flex gap-3"><Phone size={16} className="mt-1 shrink-0 text-orange" aria-hidden /><a href={`tel:${company.hotlineTel}`} className="font-mono hover:text-white">{company.hotline}</a></li>
-              <li className="flex gap-3"><Mail size={16} className="mt-1 shrink-0 text-orange" aria-hidden /><a href={`mailto:${company.email}`} className="break-all hover:text-white">{company.email}</a></li>
-              <li className="flex gap-3"><User size={16} className="mt-1 shrink-0 text-orange" aria-hidden />{company.contactPerson}</li>
-              <li className="flex gap-3"><Factory size={16} className="mt-1 shrink-0 text-orange" aria-hidden /><span>{t('common.factory')}: {company.factoryAddress}</span></li>
-              <li className="flex gap-3"><FacebookIcon size={16} className="mt-1 shrink-0 text-orange" /><a href={company.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-white">facebook.com/hoaphuco</a></li>
+              <li className="flex gap-3"><MapPin size={16} className="mt-1 shrink-0 text-brand" aria-hidden /><a href={company.mapsLink} target="_blank" rel="noopener noreferrer" className="hover:text-white">{company.address}</a></li>
+              <li className="flex gap-3"><Phone size={16} className="mt-1 shrink-0 text-brand" aria-hidden /><a href={`tel:${company.hotlineTel}`} className="font-mono hover:text-white">{company.hotline}</a></li>
+              <li className="flex gap-3"><Mail size={16} className="mt-1 shrink-0 text-brand" aria-hidden /><a href={`mailto:${company.email}`} className="break-all hover:text-white">{company.email}</a></li>
+              <li className="flex gap-3"><FacebookIcon size={16} className="mt-1 shrink-0 text-brand" /><a href={company.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-white">facebook.com/hoaphuco</a></li>
               <li><a href={company.mapsLink} target="_blank" rel="noopener noreferrer" className="link-arrow text-white">{t('common.maps')} <ArrowUpRight size={14} /></a></li>
             </ul>
           </div>

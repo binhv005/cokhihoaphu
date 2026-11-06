@@ -19,7 +19,7 @@ export default function FeaturedProducts() {
     el.scrollBy({ left: d * Math.min(el.clientWidth * 0.8, 720), behavior: 'smooth' })
   }
   return (
-    <section className="bg-paper py-24 md:py-36">
+    <section className="bg-paper py-16 md:py-20">
       <Container>
         <SectionHeading
           eyebrow={t('home.featEyebrow')}
@@ -36,7 +36,6 @@ export default function FeaturedProducts() {
       <div
         ref={rail}
         className="rail mt-14 flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-        data-lenis-prevent-wheel=""
       >
         {items.map((p, i) => (
           <div key={p.id} className="w-[82vw] shrink-0 snap-start xs:w-[300px] md:w-[340px]">

@@ -28,7 +28,7 @@ export default function ProductFilter({ value, onChange, onClear }) {
         <button
           type="button"
           onClick={() => onChange({ category: '', type: '' })}
-          className={`flex w-full items-center justify-between border-b border-text/10 py-3 text-left text-[15px] font-medium transition-colors ${!value.category ? 'text-orange' : 'text-ink hover:text-navy'}`}
+          className={`flex w-full items-center justify-between border-b border-text/10 py-3 text-left text-[15px] font-medium transition-colors ${!value.category ? 'text-brand-deep' : 'text-ink hover:text-navy'}`}
         >
           {t('products.all')} <span className="font-mono text-[11px] text-muted">{totalProducts}</span>
         </button>
@@ -45,7 +45,7 @@ export default function ProductFilter({ value, onChange, onClear }) {
                     aria-pressed={isActive && !value.type}
                     className={`flex flex-1 items-baseline gap-3 py-3 text-left text-[14px] font-semibold uppercase tracking-[0.04em] transition-colors ${isActive ? 'text-navy' : 'text-ink hover:text-navy'}`}
                   >
-                    <span className="font-mono text-[10px] text-orange">{c.no}</span>
+                    <span className="font-mono text-[10px] text-brand-deep">{c.no}</span>
                     <span className="flex-1">{L(c.name)}</span>
                     <span className="font-mono text-[11px] font-normal text-muted">{countByCategory(c.id)}</span>
                   </button>
@@ -64,9 +64,9 @@ export default function ProductFilter({ value, onChange, onClear }) {
                             type="button"
                             onClick={() => onChange({ category: c.id, type: on ? '' : s.id })}
                             aria-pressed={on}
-                            className={`flex w-full items-center justify-between py-1.5 text-left text-[14px] transition-colors ${on ? 'font-medium text-orange' : n ? 'text-text/80 hover:text-navy' : 'text-muted/70 hover:text-navy'}`}
+                            className={`flex w-full items-center justify-between py-1.5 text-left text-[14px] transition-colors ${on ? 'font-medium text-brand-deep' : n ? 'text-text/80 hover:text-navy' : 'text-muted/70 hover:text-navy'}`}
                           >
-                            <span className="flex items-center gap-2"><span className={`h-1.5 w-1.5 rounded-full ${on ? 'bg-orange' : 'bg-text/20'}`} />{L(s.name)}</span>
+                            <span className="flex items-center gap-2"><span className={`h-1.5 w-1.5 rounded-full ${on ? 'bg-brand' : 'bg-text/20'}`} />{L(s.name)}</span>
                             <span className="font-mono text-[11px] text-muted">{n}</span>
                           </button>
                         </li>
@@ -100,8 +100,8 @@ export default function ProductFilter({ value, onChange, onClear }) {
             const n = countByLine(id)
             const on = value.line === id
             return (
-              <button key={id} type="button" onClick={() => onChange({ line: on ? '' : id })} aria-pressed={on} className={`flex w-full items-center justify-between gap-3 py-1 text-left text-[14px] ${on ? 'font-medium text-orange' : 'text-text/80 hover:text-navy'}`}>
-                <span className="flex items-center gap-2"><span className={`h-1.5 w-1.5 rounded-full ${on ? 'bg-orange' : 'bg-text/20'}`} />{L(name)}</span>
+              <button key={id} type="button" onClick={() => onChange({ line: on ? '' : id })} aria-pressed={on} className={`flex w-full items-center justify-between gap-3 py-1 text-left text-[14px] ${on ? 'font-medium text-brand-deep' : 'text-text/80 hover:text-navy'}`}>
+                <span className="flex items-center gap-2"><span className={`h-1.5 w-1.5 rounded-full ${on ? 'bg-brand' : 'bg-text/20'}`} />{L(name)}</span>
                 <span className="font-mono text-[11px] text-muted">{n}</span>
               </button>
             )
@@ -109,7 +109,7 @@ export default function ProductFilter({ value, onChange, onClear }) {
         </div>
       </div>
 
-      <button type="button" onClick={onClear} className="link-arrow text-[13px] text-orange">{t('products.clear')}</button>
+      <button type="button" onClick={onClear} className="link-arrow text-[13px] text-brand-deep">{t('products.clear')}</button>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 export default function ProductSearch({ value, onChange, placeholder, dark = false }) {
   const { t } = useTranslation()
   return (
-    <div className={`relative flex items-center border-b ${dark ? 'border-white/25 focus-within:border-orange' : 'border-text/20 focus-within:border-navy'}`}>
+    <div className={`relative flex items-center border-b ${dark ? 'border-white/25 focus-within:border-brand' : 'border-text/20 focus-within:border-navy'}`}>
       <Search size={18} className={`pointer-events-none absolute left-0 ${dark ? 'text-white/50' : 'text-muted'}`} aria-hidden />
       <input
         type="search"

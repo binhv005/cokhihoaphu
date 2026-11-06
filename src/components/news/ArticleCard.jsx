@@ -17,7 +17,6 @@ export default function ArticleCard({ a, index = 0, large = false }) {
     <Reveal as="article" delay={(index % 3) * 0.07} className={`group ${large ? 'grid gap-8 md:grid-cols-12 md:items-center' : ''}`}>
       <Link to={ROUTES.article(a.slug)} className={`relative block overflow-hidden ${large ? 'md:col-span-6' : ''}`} aria-label={title}>
         <SmartImage src={a.image} alt={title} ratio={large ? '16/10' : '3/2'} placeholder={a.placeholder} zoom />
-        {a.isDemo && <span className="absolute left-3 top-3 rounded-full bg-yellow px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-ink">{t('common.sample')}</span>}
       </Link>
       <div className={large ? 'md:col-span-5 md:col-start-8' : 'pt-5'}>
         <p className="flex flex-wrap items-center gap-3 font-mono text-[11px] uppercase tracking-[0.14em] text-steel">

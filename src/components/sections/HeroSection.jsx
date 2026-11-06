@@ -1,16 +1,12 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { m, useReducedMotion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Button from '../common/Button'
 import Reveal, { LineReveal } from '../common/Reveal'
-import { categories } from '../../data/categories'
-import { useLocalized } from '../../hooks/useLocalized'
 import { ROUTES } from '../../constants/routes'
 import { hasWebGL } from '../../utils/format'
-import { getLenis } from '../../hooks/useSmoothScroll'
 
 gsap.registerPlugin(ScrollTrigger)
 const IndustrialScene = lazy(() => import('../three/IndustrialScene'))
@@ -19,13 +15,6 @@ const IndustrialScene = lazy(() => import('../three/IndustrialScene'))
 const Backdrop = ({ label }) => (
   <div role={label ? 'img' : undefined} aria-label={label} className="grid-lines h-full w-full bg-ink bg-[url('/images/banner-hoaphu.webp')] bg-[length:auto] bg-center bg-no-repeat bg-blend-luminosity opacity-60" />
 )
-
-const sceneLinks = {
-  s2: categories.map((c) => ({ label: c.name, to: ROUTES.productsBy(c.id) })),
-  s3: categories[1].children.map((s) => ({ label: s.name, to: ROUTES.productsBy(categories[1].id, s.id) })),
-  s4: categories[2].children.map((s) => ({ label: s.name, to: ROUTES.productsBy(categories[2].id, s.id) })),
-  s5: categories[3].children.filter((s) => s.id !== 'khung-ghe-nhom').map((s) => ({ label: s.name, to: ROUTES.productsBy(categories[3].id, s.id) })),
-}
 
 function useQuality() {
   return useMemo(() => {
@@ -38,7 +27,6 @@ function useQuality() {
 
 export default function HeroSection() {
   const { t } = useTranslation()
-  const { L } = useLocalized()
   const reduce = useReducedMotion()
   const quality = useQuality()
   const wrap = useRef(null)
@@ -55,7 +43,7 @@ export default function HeroSection() {
   const [active, setActive] = useState(true)
   const [scene, setScene] = useState(0)
   const scenes = ['s1', 's2', 's3', 's4', 's5', 's6']
-  const textRight = scene > 0 && scene % 2 === 0 // scene 02/04/06 đặt chữ bên phải
+  const textRight = scene > 0 && scene < 6 && scene % 2 === 0 // scene 02/04 đặt chữ bên phải (06 bên trái)
 
   useEffect(() => {
     const el = wrap.current
@@ -75,15 +63,6 @@ export default function HeroSection() {
     io.observe(el)
     return () => { st.kill(); io.disconnect() }
   }, [scenes.length])
-
-  const jump = (i) => {
-    const el = wrap.current
-    if (!el) return
-    const top = el.offsetTop + (el.offsetHeight - window.innerHeight) * (i / scenes.length)
-    const lenis = getLenis()
-    if (lenis) lenis.scrollTo(top, { duration: 1.6 })
-    else window.scrollTo({ top, behavior: 'smooth' })
-  }
 
   const D = 0.35 // delay cơ sở cho chuỗi xuất hiện
 
@@ -129,36 +108,17 @@ export default function HeroSection() {
               </m.div>
             </div>
           </div>
-          <m.button
-            type="button"
-            onClick={() => jump(1)}
-            className="mt-14 flex items-center gap-4 self-start font-mono text-[11px] uppercase tracking-[0.22em] text-white/60 hover:text-white"
-            initial={reduce ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: D + 1.7 }}
-          >
-            <span className="relative block h-10 w-px overflow-hidden bg-white/15"><span className="animate-scrollcue absolute inset-x-0 top-0 h-1/2 bg-orange" /></span>
-            {t('common.scroll')}
-          </m.button>
         </div>
 
         {/* SCENES */}
         {scenes.map((s, i) => {
-          const right = i % 2 === 1
-          const links = sceneLinks[s]
+          const right = i % 2 === 1 && s !== 's6'
           return (
             <div key={s} className="container-x flex min-h-svh items-end pb-24 md:items-center md:pb-0">
               <div className={`w-full max-w-xl ${right ? 'md:ml-auto md:mr-[8%]' : ''}`}>
-                <Reveal as="h2" delay={0.05} className="h1 text-white">{t(`scenes.${s}.title`)}</Reveal>
-                {links && (
-                  <Reveal delay={0.18} className="mt-8 flex flex-wrap gap-2">
-                    {links.map((l) => (
-                      <Link key={l.to} to={l.to} className="rounded-full border border-white/20 bg-ink/40 px-4 py-2 text-[13px] text-white/80 backdrop-blur transition-colors hover:border-orange hover:text-orange">
-                        {L(l.label)}
-                      </Link>
-                    ))}
-                  </Reveal>
-                )}
+                <Reveal as="h2" y={0} transition={{ duration: 1.4, delay: 0.05, ease: "easeOut" }} className="h1 text-white">{t(`scenes.${s}.title`)}</Reveal>
                 {s === 's6' && (
-                  <Reveal delay={0.15} className="mt-10 flex flex-wrap gap-3">
+                  <Reveal y={0} transition={{ duration: 1.4, delay: 0.35, ease: "easeOut" }} className="mt-10 flex flex-wrap gap-3">
                     <Button to={ROUTES.products}>{t('scenes.s6.cta')}</Button>
                     <Button to={ROUTES.contact} variant="ghostDark">{t('nav.contact')}</Button>
                   </Reveal>

@@ -15,7 +15,7 @@ export default function CategorySection() {
   const { t } = useTranslation()
   const { L } = useLocalized()
   return (
-    <section className="bg-ink py-24 text-white md:py-32">
+    <section className="bg-ink py-16 text-white md:py-20">
       <Container>
         <SectionHeading dark eyebrow={t('home.catEyebrow')} title={t('home.catTitle')} />
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-5">
@@ -29,8 +29,8 @@ export default function CategorySection() {
                     <span>[{c.no}]</span><span>{countByCategory(c.id)}</span>
                   </div>
                   <div className="flex items-end justify-between gap-4">
-                    <h3 className="text-[clamp(1.25rem,1.9vw,1.7rem)] font-medium leading-tight tracking-[-0.02em] transition-colors duration-500 group-hover:text-orange">{L(c.name)}</h3>
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/30 transition-all duration-500 group-hover:border-orange group-hover:bg-orange group-hover:text-ink"><ArrowUpRight size={15} /></span>
+                    <h3 className="text-[clamp(1.25rem,1.9vw,1.7rem)] font-medium leading-tight tracking-[-0.02em] transition-colors duration-500 group-hover:text-brand">{L(c.name)}</h3>
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/30 transition-all duration-500 group-hover:border-brand group-hover:bg-brand group-hover:text-ink"><ArrowUpRight size={15} /></span>
                   </div>
                 </div>
               </Link>

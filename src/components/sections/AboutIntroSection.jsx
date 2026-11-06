@@ -9,10 +9,10 @@ import { ROUTES } from '../../constants/routes'
 export default function AboutIntroSection() {
   const { t } = useTranslation()
   return (
-    <section className="bg-paper py-24 md:py-32">
+    <section className="bg-paper py-16 md:py-20">
       <Container className="grid items-center gap-14 lg:grid-cols-12">
-        <div className="lg:col-span-5">
-          <h2 className="h1 text-ink"><LineReveal lines={[t('home.aboutTitle')]} /></h2>
+        <div className="lg:col-span-6">
+          <h2 className="h1 whitespace-nowrap text-ink text-[clamp(1.6rem,3.2vw,2.9rem)]"><LineReveal lines={[t('home.aboutTitle')]} /></h2>
           <Reveal as="p" delay={0.06} className="lead mt-6 max-w-md text-muted">{t('home.aboutP2')}</Reveal>
           <Reveal delay={0.12} className="mt-8"><Button to={ROUTES.about} variant="navy">{t('common.learnMore')}</Button></Reveal>
         </div>

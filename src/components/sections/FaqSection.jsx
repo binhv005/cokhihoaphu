@@ -9,12 +9,10 @@ export default function FaqSection({ className = 'bg-paper' }) {
   const { t } = useTranslation()
   const { L } = useLocalized()
   return (
-    <section className={`py-24 md:py-32 ${className}`}>
-      <Container className="grid gap-12 lg:grid-cols-12">
-        <div className="lg:col-span-4">
-          <Reveal as="h2" className="h2 text-ink">{t('home.faqTitle')}</Reveal>
-        </div>
-        <Reveal className="lg:col-span-7 lg:col-start-6">
+    <section className={`py-16 md:py-20 ${className}`}>
+      <Container>
+        <Reveal as="h2" className="h2 text-center text-ink">{t('home.faqTitle')}</Reveal>
+        <Reveal className="mx-auto mt-10 max-w-4xl md:mt-12">
           <Accordion items={faqs.map((f) => ({ q: L(f.q), a: L(f.a) }))} />
         </Reveal>
       </Container>

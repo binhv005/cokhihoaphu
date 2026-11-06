@@ -19,9 +19,9 @@ export default function ProjectsSection() {
   const items = activities.slice(0, 6)
   const lb = items.map((a) => ({ src: a.image, alt: L(a.title), caption: L(a.title) }))
   return (
-    <section className="bg-ink py-24 text-white md:py-36">
+    <section className="bg-ink py-16 text-white md:py-20">
       <Container>
-        <SectionHeading dark eyebrow={t('home.projEyebrow')} title={t('home.projTitle')} desc={t('home.projNote')} />
+        <SectionHeading dark eyebrow={t('home.projEyebrow')} title={t('home.projTitle')} />
         <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((a, i) => (
             <Reveal key={a.id} delay={(i % 3) * 0.06}>
@@ -30,8 +30,7 @@ export default function ProjectsSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4 md:p-5">
                   <div>
-                    <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-orange">{t('common.photoActivity')}</p>
-                    <p className="mt-1 text-balance text-[14px] font-medium md:text-[16px]">{L(a.title)}</p>
+                    <p className="text-balance text-[14px] font-medium md:text-[16px]">{L(a.title)}</p>
                   </div>
                   <Expand size={18} className="shrink-0 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden />
                 </div>
@@ -42,7 +41,7 @@ export default function ProjectsSection() {
         <div className="mt-10"><Button to={ROUTES.projects} variant="ghostDark">{t('home.projCta')}</Button></div>
       </Container>
 
-      <div className="mt-24 border-t border-white/10 pt-12">
+      <div className="mt-16 border-t border-white/10 pt-12">
         <Container><h2 className="h2 mb-10">{t('home.partnersTitle')}</h2></Container>
         <div className="relative overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)]">
           <ul className="animate-marquee flex w-max gap-4" aria-label={t('home.partnersTitle')}>

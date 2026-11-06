@@ -5,7 +5,6 @@ import PageHero from '../components/common/PageHero'
 import Container from '../components/common/Container'
 import ArticleCard from '../components/news/ArticleCard'
 import ProductSearch from '../components/products/ProductSearch'
-import CtaBand from '../components/common/CtaBand'
 import Pagination from '../components/common/Pagination'
 import { news, newsCategories } from '../data/news'
 import { useLocalized } from '../hooks/useLocalized'
@@ -48,14 +47,14 @@ export default function News() {
       <PageHero eyebrow={t('news.eyebrow')} title={t('news.title')} desc={t('news.desc')} breadcrumb={[{ label: t('nav.news') }]} image="/images/products/p21.webp" compact index="06" />
 
       {!cat && !q && featured && (
-        <section className="bg-white py-16 md:py-24">
+        <section className="bg-white py-16 md:py-20">
           <Container>
             <ArticleCard a={featured} large />
           </Container>
         </section>
       )}
 
-      <section className="bg-paper py-16 md:py-24">
+      <section className="bg-paper py-16 md:py-20">
         <Container className="grid gap-12 lg:grid-cols-[1fr_300px] lg:gap-16">
           <div className="order-2 lg:order-1">
             {shown.length ? (
@@ -78,7 +77,7 @@ export default function News() {
                   return (
                     <li key={c.id || 'all'}>
                       <button type="button" onClick={() => setCat(c.id)} aria-pressed={cat === c.id}
-                        className={`flex w-full items-center justify-between gap-4 rounded-full border px-4 py-2 text-[14px] transition-colors lg:rounded-none lg:border-0 lg:border-b lg:border-text/10 lg:px-0 lg:py-3 ${cat === c.id ? 'border-navy text-orange' : 'border-text/20 text-ink hover:text-navy'}`}>
+                        className={`flex w-full items-center justify-between gap-4 rounded-full border px-4 py-2 text-[14px] transition-colors lg:rounded-none lg:border-0 lg:border-b lg:border-text/10 lg:px-0 lg:py-3 ${cat === c.id ? 'border-navy text-brand-deep' : 'border-text/20 text-ink hover:text-navy'}`}>
                         {c.name ? L(c.name) : t('news.all')}<span className="font-mono text-[11px] text-muted">{n}</span>
                       </button>
                     </li>
@@ -89,7 +88,6 @@ export default function News() {
           </aside>
         </Container>
       </section>
-      <CtaBand />
     </>
   )
 }

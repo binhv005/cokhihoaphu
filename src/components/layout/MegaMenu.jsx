@@ -36,7 +36,7 @@ export default function MegaMenu({ onNavigate, id, onMouseEnter, onMouseLeave })
                 onMouseEnter={() => setActive(c.id)}
                 onFocus={() => setActive(c.id)}
                 onClick={onNavigate}
-                className={`group flex items-baseline gap-4 border-b border-white/5 py-4 transition-colors ${active === c.id ? 'text-orange' : 'text-white/80 hover:text-white'}`}
+                className={`group flex items-baseline gap-4 border-b border-white/5 py-4 transition-colors ${active === c.id ? 'text-brand' : 'text-white/80 hover:text-white'}`}
               >
                 <span className="font-mono text-[11px] text-white/40">{c.no}</span>
                 <span className="flex-1 text-[16px] font-medium">{L(c.name)}</span>
@@ -53,7 +53,7 @@ export default function MegaMenu({ onNavigate, id, onMouseEnter, onMouseLeave })
           <ul className="grid grid-cols-2 gap-x-6" role="list">
             {cat.children.map((s) => (
               <li key={s.id}>
-                <Link to={ROUTES.productsBy(cat.id, s.id)} onClick={onNavigate} className="block border-b border-white/5 py-2.5 text-[14px] text-white/70 transition-colors hover:text-orange">
+                <Link to={ROUTES.productsBy(cat.id, s.id)} onClick={onNavigate} className="block border-b border-white/5 py-2.5 text-[14px] text-white/70 transition-colors hover:text-brand">
                   {L(s.name)}
                 </Link>
               </li>

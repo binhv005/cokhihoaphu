@@ -26,9 +26,9 @@ export default function ProductCard({ product, index = 0, dark = false }) {
           {product.condition && (
             <span className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${product.condition === 'new' ? 'bg-steel text-white' : 'bg-white/90 text-ink'}`}>{t(`products.${product.condition}`)}</span>
           )}
-          {product.line === 'kuboke' && <span className="rounded-full bg-orange px-2.5 py-1 text-[11px] font-semibold text-ink">Kuboke</span>}
+          {product.line === 'kuboke' && <span className="rounded-full bg-brand px-2.5 py-1 text-[11px] font-semibold text-ink">Kuboke</span>}
         </div>
-        <span className="absolute bottom-3 right-3 flex h-10 w-10 translate-y-2 items-center justify-center rounded-full bg-orange text-ink opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+        <span className="absolute bottom-3 right-3 flex h-10 w-10 translate-y-2 items-center justify-center rounded-full bg-brand text-ink opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
           <ArrowUpRight size={18} />
         </span>
       </Link>
@@ -36,13 +36,13 @@ export default function ProductCard({ product, index = 0, dark = false }) {
         <p className={`font-mono text-[11px] uppercase tracking-[0.16em] ${dark ? 'text-white/45' : 'text-steel'}`}>
           {L(product.subcategoryName)}{product.code ? ` · ${product.code}` : ''}
         </p>
-        <h3 className="mt-2 text-[18px] font-semibold leading-snug tracking-[-0.01em] transition-colors group-hover:text-orange">
+        <h3 className="mt-2 text-[18px] font-semibold leading-snug tracking-[-0.01em] transition-colors group-hover:text-brand-deep">
           <Link to={ROUTES.product(product.slug)}>{name}</Link>
         </h3>
         <div className="mt-auto flex flex-wrap items-center gap-3 pt-5">
           <div className="flex items-center gap-4 text-[13px] font-medium">
             <Link to={ROUTES.product(product.slug)} className="link-arrow">{t('common.viewDetail')}</Link>
-            <Link to={ROUTES.quote(product.slug)} className={`link-arrow ${dark ? 'text-orange' : 'text-orange'}`}>{t('common.requestQuote')}</Link>
+            <Link to={ROUTES.quote(product.slug)} className={`link-arrow ${dark ? 'text-brand' : 'text-brand-deep'}`}>{t('common.requestQuote')}</Link>
           </div>
         </div>
       </div>

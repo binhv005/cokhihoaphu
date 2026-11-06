@@ -7,7 +7,7 @@ export default function Field({ id, label, required, error, children, className 
     <div className={className}>
       <label htmlFor={id} className={`block font-mono text-[11px] uppercase tracking-[0.16em] ${dark ? 'text-white/55' : 'text-muted'}`}>
         {label}
-        {required && <span className="ml-1 text-orange" aria-label={t('form.required')}>*</span>}
+        {required && <span className="ml-1 text-brand-deep" aria-label={t('form.required')}>*</span>}
       </label>
       {children}
       {error && (

@@ -14,8 +14,8 @@ export default function FormStatus({ status }) {
     )
   }
   return (
-    <div role="alert" className="flex flex-col gap-3 border-l-2 border-orange bg-orange/10 p-4 text-[14px] text-text sm:flex-row sm:items-start">
-      <AlertTriangle size={18} className="mt-0.5 shrink-0 text-orange" aria-hidden />
+    <div role="alert" className="flex flex-col gap-3 border-l-2 border-brand bg-brand/10 p-4 text-[14px] text-text sm:flex-row sm:items-start">
+      <AlertTriangle size={18} className="mt-0.5 shrink-0 text-brand-deep" aria-hidden />
       <p className="flex-1">{status === 'not_configured' ? t('form.notConfigured') : t('form.error')}</p>
       <a href={`tel:${company.hotlineTel}`} className="btn btn-navy shrink-0 px-4 py-2.5"><Phone size={15} />{company.hotline}</a>
     </div>

@@ -9,7 +9,6 @@ import ApplicationsSection from '../components/sections/ApplicationsSection'
 import ProjectsSection from '../components/sections/ProjectsSection'
 import NewsSection from '../components/sections/NewsSection'
 import FaqSection from '../components/sections/FaqSection'
-import CtaBand from '../components/common/CtaBand'
 import { organizationLd, useSeo } from '../hooks/useSeo'
 
 export default function Home() {
@@ -27,7 +26,6 @@ export default function Home() {
       <ProjectsSection />
       <NewsSection />
       <FaqSection />
-      <CtaBand />
     </>
   )
 }

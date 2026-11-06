@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Building2, Factory, Mail, MapPin, Navigation, Phone, User } from 'lucide-react'
+import { Mail, MapPin, Navigation, Phone } from 'lucide-react'
 import PageHero from '../components/common/PageHero'
 import Container from '../components/common/Container'
 import Reveal from '../components/common/Reveal'
@@ -13,62 +13,50 @@ export default function Contact() {
   const { t } = useTranslation()
   useSeo({ title: t('seo.contact'), description: t('contact.desc'), jsonLd: [organizationLd(), breadcrumbLd([{ label: t('nav.home'), to: '/' }, { label: t('nav.contact'), to: '/contact' }])] })
 
-  const cards = [
-    { icon: Phone, label: t('common.hotline'), value: company.hotline, href: `tel:${company.hotlineTel}`, mono: true },
-    { icon: Mail, label: t('common.email'), value: company.email, href: `mailto:${company.email}` },
-    { icon: User, label: t('common.contactPerson'), value: company.contactPerson },
-    { icon: FacebookIcon, label: t('common.facebook'), value: 'facebook.com/hoaphuco', href: company.facebook },
-    { icon: MapPin, label: t('common.office'), value: company.address, href: company.mapsLink },
-    { icon: Building2, label: t('common.business'), value: company.businessAddress },
-    { icon: Factory, label: t('common.factory'), value: company.factoryAddress },
-    { icon: Navigation, label: 'Website', value: company.websites },
+  // thông tin liên hệ chính hiển thị trên panel ảnh bên trái form
+  const info = [
+    { icon: Phone, value: company.hotline, href: `tel:${company.hotlineTel}`, mono: true },
+    { icon: Mail, value: company.email, href: `mailto:${company.email}` },
+    { icon: MapPin, value: company.address, href: company.mapsLink },
+    { icon: FacebookIcon, value: 'facebook.com/hoaphuco', href: company.facebook },
   ]
 
   return (
     <>
       <PageHero eyebrow={t('contact.eyebrow')} title={t('contact.title')} desc={t('contact.desc')} breadcrumb={[{ label: t('nav.contact') }]} image="/images/products/p49.webp" index="07" />
 
-      <section className="bg-ink pb-20 text-white">
+      <section className="bg-paper py-16 md:py-20">
         <Container>
-          <div className="grid gap-px bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-            {cards.map((c, i) => {
-              const Icon = c.icon
-              const inner = (
-                <>
-                  <Icon size={22} className="text-orange" aria-hidden />
-                  <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.16em] text-white/45">{c.label}</p>
-                  {Array.isArray(c.value) ? (
-                    <ul className="mt-2 space-y-1 text-[15px] text-white">{c.value.map((v) => <li key={v} className="break-all">{v}</li>)}</ul>
-                  ) : (
-                    <p className={`mt-2 break-words text-[16px] leading-snug text-white ${c.mono ? 'font-mono text-[22px]' : ''}`}>{c.value}</p>
-                  )}
-                </>
-              )
-              return (
-                <Reveal key={c.label} delay={i * 0.05} className="bg-ink">
-                  {c.href ? (
-                    <a href={c.href} {...(c.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="block h-full p-7 transition-colors hover:bg-navy">{inner}</a>
-                  ) : (
-                    <div className="h-full p-7">{inner}</div>
-                  )}
-                </Reveal>
-              )
-            })}
-          </div>
+          <Reveal className="grid overflow-hidden bg-white shadow-[0_30px_80px_-30px_rgba(18,52,90,.35)] lg:grid-cols-12">
+            {/* Panel trái: ảnh xưởng thực tế phủ lớp xanh logo */}
+            <div className="relative isolate flex flex-col justify-between gap-12 overflow-hidden p-8 text-white sm:p-10 lg:col-span-5 lg:p-12">
+              <img src="/images/products/p00.webp" alt="" aria-hidden loading="lazy" decoding="async" className="absolute inset-0 -z-20 h-full w-full object-cover" />
+              <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#0b2647]/95 via-[#12345a]/88 to-[#3b6bb0]/75" aria-hidden />
+              <div className="grid-lines absolute inset-0 -z-10 opacity-40" aria-hidden />
+              <div>
+                <h2 className="h2">{t('contact.formTitle')}</h2>
+                <p className="mt-5 max-w-sm text-[16px] leading-relaxed text-white/75">{t('home.ctaDesc')}</p>
+              </div>
+              <ul className="space-y-4">
+                {info.map(({ icon: Icon, value, href, mono }) => (
+                  <li key={value}>
+                    <a href={href} {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="group flex items-start gap-4 text-[15px] text-white/85 transition-colors hover:text-white">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/5 text-brand transition-colors group-hover:border-brand group-hover:bg-brand group-hover:text-logo-ink"><Icon size={17} aria-hidden /></span>
+                      <span className={`self-center break-words ${mono ? 'font-mono text-[20px] text-white' : ''}`}>{value}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Form */}
+            <div className="p-8 sm:p-10 lg:col-span-7 lg:p-12">
+              <ContactForm />
+            </div>
+          </Reveal>
         </Container>
       </section>
 
-      <section className="bg-paper py-20 md:py-28">
-        <Container className="grid gap-14 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <Reveal as="h2" className="h2 text-ink">{t('contact.formTitle')}</Reveal>
-            <Reveal as="p" delay={0.05} className="mt-6 text-muted">{t('home.ctaDesc')}</Reveal>
-          </div>
-          <Reveal delay={0.1} className="lg:col-span-7 lg:col-start-6"><ContactForm /></Reveal>
-        </Container>
-      </section>
-
-      <section className="bg-white py-20 md:py-28">
+      <section className="bg-white py-16 md:py-20">
         <Container>
           <div className="mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <Reveal as="h2" className="h2 text-ink">{t('contact.mapTitle')}</Reveal>

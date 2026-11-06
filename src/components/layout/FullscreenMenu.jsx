@@ -55,7 +55,7 @@ export default function FullscreenMenu({ open, onClose }) {
                 <LanguageSwitch className="text-white" />
                 <button ref={closeRef} type="button" onClick={onClose} className="group flex items-center gap-3 text-[13px] uppercase tracking-[0.18em]">
                   <span className="hidden sm:inline">{t('nav.close')}</span>
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/25 transition-colors group-hover:border-orange group-hover:text-orange"><X size={18} /></span>
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/25 transition-colors group-hover:border-brand group-hover:text-brand"><X size={18} /></span>
                 </button>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function FullscreenMenu({ open, onClose }) {
                         to={it.to}
                         end={it.to === '/'}
                         onClick={onClose}
-                        className={({ isActive }) => `group flex items-baseline gap-5 border-b border-white/10 py-3 transition-colors md:py-4 ${isActive ? 'text-orange' : 'hover:text-orange'}`}
+                        className={({ isActive }) => `group flex items-baseline gap-5 border-b border-white/10 py-3 transition-colors md:py-4 ${isActive ? 'text-brand' : 'hover:text-brand'}`}
                       >
                         <span className="font-mono text-[12px] text-white/40">[{String(i + 1).padStart(2, '0')}]</span>
                         <span className="text-[clamp(1.9rem,5vw,3.6rem)] font-medium leading-[1.05] tracking-[-0.02em]">{t(`nav.${it.key}`)}</span>
@@ -86,7 +86,7 @@ export default function FullscreenMenu({ open, onClose }) {
                   <ul className="space-y-1">
                     {categories.map((c) => (
                       <li key={c.id}>
-                        <Link to={ROUTES.productsBy(c.id)} onClick={onClose} className="flex gap-3 py-1.5 text-[16px] text-white/75 transition-colors hover:text-orange">
+                        <Link to={ROUTES.productsBy(c.id)} onClick={onClose} className="flex gap-3 py-1.5 text-[16px] text-white/75 transition-colors hover:text-brand">
                           <span className="font-mono text-[11px] leading-7 text-white/35">{c.no}</span>{L(c.name)}
                         </Link>
                       </li>
@@ -96,7 +96,7 @@ export default function FullscreenMenu({ open, onClose }) {
                 <div className="space-y-3 text-[14px] text-white/60">
                   <p className="eyebrow text-white/40">{t('footer.contact')}</p>
                   <p>{company.address}</p>
-                  <a href={`tel:${company.hotlineTel}`} className="block font-mono text-[22px] text-white hover:text-orange">{company.hotline}</a>
+                  <a href={`tel:${company.hotlineTel}`} className="block font-mono text-[22px] text-white hover:text-brand">{company.hotline}</a>
                   <a href={company.facebook} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-white"><FacebookIcon size={16} /> facebook.com/hoaphuco</a>
                 </div>
                 <Link to={ROUTES.quote()} onClick={onClose} className="btn btn-primary self-start">{t('nav.quote')} <ArrowUpRight size={17} /></Link>

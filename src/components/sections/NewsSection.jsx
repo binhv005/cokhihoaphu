@@ -10,7 +10,7 @@ export default function NewsSection() {
   const { t } = useTranslation()
   const items = ['kien-thuc-co-ban-ve-may-che-bien-go', 'giai-phap-bang-tai-cong-nghiep', 'lua-chon-thiet-bi-cho-day-chuyen-san-xuat'].map((s) => news.find((n) => n.slug === s))
   return (
-    <section className="bg-white py-24 md:py-36">
+    <section className="bg-white py-16 md:py-20">
       <Container>
         <SectionHeading eyebrow={t('home.newsEyebrow')} title={t('home.newsTitle')} aside={<div className="lg:text-right"><Button to={ROUTES.news} variant="ghostLight">{t('home.newsCta')}</Button></div>} />
         <div className="mt-14 grid gap-x-6 gap-y-14 md:grid-cols-3">

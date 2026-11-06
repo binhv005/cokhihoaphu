@@ -6,7 +6,6 @@ import Container from '../components/common/Container'
 import Breadcrumb from '../components/common/Breadcrumb'
 import Button from '../components/common/Button'
 import Reveal from '../components/common/Reveal'
-import CtaBand from '../components/common/CtaBand'
 import ProductGallery from '../components/products/ProductGallery'
 import SpecificationTable from '../components/products/SpecificationTable'
 import ProductGrid from '../components/products/ProductGrid'
@@ -46,7 +45,7 @@ function Detail({ product: base }) {
     loadProductDetail(base.slug).then((d) => alive && setDetail(d)).catch(() => alive && setFailed(true))
     return () => { alive = false }
   }, [base.slug])
-  const product = { short: '', paragraphs: [], specTable: null, video: null, source: null, ...base, ...(detail ?? {}), images: detail?.images ?? base.images }
+  const product = { short: '', paragraphs: [], specTables: [], video: null, source: null, ...base, ...(detail ?? {}), images: detail?.images ?? base.images }
   const loading = !detail && !failed
   const name = L(product.name)
   const related = getRelatedProducts(product)
@@ -98,7 +97,7 @@ function Detail({ product: base }) {
         </Container>
       </section>
 
-      <section className="bg-paper pb-20 pt-10 md:pb-28">
+      <section className="bg-paper pb-16 pt-10 md:pb-20">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-7">
             <ProductGallery images={product.images} alt={name} placeholder={product.placeholder} />
@@ -123,12 +122,12 @@ function Detail({ product: base }) {
         </Container>
       </section>
 
-      <section className="bg-white py-20 md:py-28">
+      <section className="bg-white py-16 md:py-20">
         <Container className="max-w-[1100px]">
           {product.paragraphs.length > 0 && (
-            <Reveal className="mb-16 grid gap-6 md:grid-cols-12">
-              <h2 className="h2 text-ink md:col-span-4">{t('detail.intro')}</h2>
-              <div className="space-y-4 text-[16px] leading-relaxed text-text/85 md:col-span-8">
+            <Reveal className="mb-16">
+              <h2 className="h2 mb-8 text-ink">{t('detail.intro')}</h2>
+              <div className="space-y-4 text-[16px] leading-relaxed text-text/85">
                 {product.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
               </div>
             </Reveal>
@@ -138,7 +137,7 @@ function Detail({ product: base }) {
           {loading ? (
             <div className="space-y-2" aria-busy="true">{Array.from({ length: 5 }, (_, i) => <div key={i} className="h-10 animate-pulse bg-paper" />)}</div>
           ) : (
-            <SpecificationTable table={product.specTable} />
+            <SpecificationTable tables={product.specTables} />
           )}
 
           {product.video && (
@@ -157,7 +156,7 @@ function Detail({ product: base }) {
       </section>
 
       {related.length > 0 && (
-        <section className="bg-paper py-20 md:py-28">
+        <section className="bg-paper py-16 md:py-20">
           <Container>
             <Reveal as="h2" className="h2 mb-12 text-ink">{t('detail.related')}.</Reveal>
             <ProductGrid products={related} cols="sm:grid-cols-2 lg:grid-cols-4" />
@@ -165,7 +164,6 @@ function Detail({ product: base }) {
         </section>
       )}
 
-      <CtaBand product={product.slug} />
     </>
   )
 }

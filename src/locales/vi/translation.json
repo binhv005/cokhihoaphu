@@ -19,25 +19,15 @@
     "viewDetail": "Xem chi tiết",
     "requestQuote": "Yêu cầu báo giá",
     "contactPrice": "Liên hệ báo giá",
-    "callNow": "Gọi ngay",
     "learnMore": "Tìm hiểu thêm",
     "readMore": "Đọc thêm",
-    "sample": "Nội dung mẫu",
     "illustration": "Hình minh hoạ kỹ thuật – ảnh thực tế đang cập nhật",
-    "scroll": "Cuộn để khám phá",
-    "hotline": "Hotline",
     "contactPerson": "Người liên hệ",
-    "facebook": "Facebook",
     "maps": "Google Maps",
     "directions": "Chỉ đường đến Hoà Phú",
-    "photoActivity": "Ảnh hoạt động & thiết bị",
     "close": "Đóng",
     "prev": "Ảnh trước",
     "next": "Ảnh sau",
-    "email": "Email",
-    "office": "Trụ sở",
-    "business": "Địa điểm kinh doanh",
-    "factory": "Nhà máy sản xuất",
     "prevPage": "Trang trước",
     "nextPage": "Trang sau"
   },
@@ -108,7 +98,6 @@
     ],
     "projEyebrow": "Dự án & hoạt động",
     "projTitle": "Dự án & hoạt động tiêu biểu.",
-    "projNote": "Ảnh thực tế tại xưởng và triển lãm.",
     "projCta": "Xem thư viện hình ảnh",
     "partnersTitle": "Đối tác",
     "newsEyebrow": "Tin tức",
@@ -117,10 +106,7 @@
     "faqTitle": "Giải đáp nhanh.",
     "aboutTitle": "Giới thiệu Hoà Phú.",
     "aboutP2": "Nhà sản xuất, chế tạo máy – đồng thời cung ứng máy nhập khẩu Nhật Bản, Châu Âu, Đài Loan và máy qua sử dụng.",
-    "ctaTitle1": "Cùng Hoà Phú",
-    "ctaTitle2": "kiến tạo giải pháp sản xuất.",
-    "ctaDesc": "Trao đổi nhu cầu để chọn thiết bị phù hợp.",
-    "ctaBtn": "Gửi yêu cầu báo giá"
+    "ctaDesc": "Trao đổi nhu cầu để chọn thiết bị phù hợp."
   },
   "about": {
     "eyebrow": "Về chúng tôi",
@@ -128,9 +114,7 @@
     "desc": "Là một nhà sản xuất, chế tạo máy chuyên nghiệp với mục tiêu mang lại sự tiện ích, nâng cao năng suất và hiệu quả trong sản xuất kinh doanh của quý doanh nghiệp.",
     "overviewTitle": "Nhà sản xuất, chế tạo máy chuyên nghiệp.",
     "fieldsTitle": "Lĩnh vực hoạt động.",
-    "placeholderNote": "Nội dung theo trang Giới thiệu của website chính thức hoaphuco.com.vn.",
     "galleryTitle": "Nhà xưởng & máy móc.",
-    "ctaTitle": "Trao đổi nhu cầu cùng Hoà Phú.",
     "p2": "Ngoài các sản phẩm cơ khí được sản xuất và chế tạo, Hoà Phú còn cung ứng các sản phẩm thương mại nhập khẩu từ Nhật Bản, Châu Âu, Đài Loan và những sản phẩm qua sử dụng – giúp khách hàng có một hệ thống đồng bộ với chi phí hợp lý nhất.",
     "p3": "Chúng tôi không ngừng nghiên cứu, cải tiến chất lượng và phát triển sản phẩm mới phù hợp với điều kiện sản xuất của từng doanh nghiệp tại Việt Nam."
   },
@@ -183,7 +167,6 @@
     "eyebrow": "Dự án & hoạt động",
     "title": "Hình ảnh hoạt động & thiết bị.",
     "desc": "Thiết bị và hoạt động thực tế của Hoà Phú.",
-    "intro": "Ảnh hoạt động và thiết bị thực tế – không phải dự án khách hàng.",
     "all": "Tất cả",
     "empty": "Chưa có hình ảnh cho lĩnh vực này."
   },
@@ -199,7 +182,6 @@
     "share": "Chia sẻ",
     "copy": "Sao chép liên kết",
     "copied": "Đã sao chép",
-    "sampleNote": "Đây là bài viết mẫu, sẽ được thay bằng nội dung chính thức của doanh nghiệp.",
     "page": "Trang"
   },
   "contact": {

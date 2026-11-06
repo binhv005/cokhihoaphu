@@ -36,11 +36,11 @@ export default function Lightbox({ items, index, onClose, onChange }) {
           onClick={onClose} role="dialog" aria-modal="true" aria-label={items[index]?.alt}
           data-lenis-prevent
         >
-          <button type="button" onClick={onClose} aria-label={t('common.close')} className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white hover:border-orange hover:text-orange"><X size={20} /></button>
+          <button type="button" onClick={onClose} aria-label={t('common.close')} className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white hover:border-brand hover:text-brand"><X size={20} /></button>
           {items.length > 1 && (
             <>
-              <button type="button" onClick={(e) => { e.stopPropagation(); go(-1) }} aria-label={t('common.prev')} className="absolute left-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 text-white hover:border-orange hover:text-orange sm:left-6"><ChevronLeft size={20} /></button>
-              <button type="button" onClick={(e) => { e.stopPropagation(); go(1) }} aria-label={t('common.next')} className="absolute right-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 text-white hover:border-orange hover:text-orange sm:right-6"><ChevronRight size={20} /></button>
+              <button type="button" onClick={(e) => { e.stopPropagation(); go(-1) }} aria-label={t('common.prev')} className="absolute left-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 text-white hover:border-brand hover:text-brand sm:left-6"><ChevronLeft size={20} /></button>
+              <button type="button" onClick={(e) => { e.stopPropagation(); go(1) }} aria-label={t('common.next')} className="absolute right-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 text-white hover:border-brand hover:text-brand sm:right-6"><ChevronRight size={20} /></button>
             </>
           )}
           <m.figure key={index} initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }} className="max-h-full max-w-5xl" onClick={(e) => e.stopPropagation()}>

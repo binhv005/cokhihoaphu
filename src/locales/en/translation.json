@@ -19,25 +19,15 @@
     "viewDetail": "View details",
     "requestQuote": "Request a Quote",
     "contactPrice": "Contact for price",
-    "callNow": "Call now",
     "learnMore": "Learn more",
     "readMore": "Read more",
-    "sample": "Sample content",
     "illustration": "Technical illustration – real photo coming soon",
-    "scroll": "Scroll to explore",
-    "hotline": "Hotline",
     "contactPerson": "Contact person",
-    "facebook": "Facebook",
     "maps": "Google Maps",
     "directions": "Directions to Hoa Phu",
-    "photoActivity": "Activity & equipment photo",
     "close": "Close",
     "prev": "Previous image",
     "next": "Next image",
-    "email": "Email",
-    "office": "Head office",
-    "business": "Business location",
-    "factory": "Factory",
     "prevPage": "Previous page",
     "nextPage": "Next page"
   },
@@ -108,7 +98,6 @@
     ],
     "projEyebrow": "Projects & activities",
     "projTitle": "Projects & activities.",
-    "projNote": "Real photos from our workshop and exhibitions.",
     "projCta": "View the gallery",
     "partnersTitle": "Partners",
     "newsEyebrow": "News",
@@ -117,10 +106,7 @@
     "faqTitle": "Quick answers.",
     "aboutTitle": "About Hoa Phu.",
     "aboutP2": "A machinery manufacturer that also supplies imported machines from Japan, Europe and Taiwan, plus used machinery.",
-    "ctaTitle1": "Let's build",
-    "ctaTitle2": "something better.",
-    "ctaDesc": "Tell us your needs and we will help you choose suitable equipment.",
-    "ctaBtn": "Send a quote request"
+    "ctaDesc": "Tell us your needs and we will help you choose suitable equipment."
   },
   "about": {
     "eyebrow": "About us",
@@ -128,9 +114,7 @@
     "desc": "A professional machine manufacturer whose goal is to bring convenience and raise productivity and efficiency for our customers’ businesses.",
     "overviewTitle": "A professional machinery manufacturer.",
     "fieldsTitle": "Fields of activity.",
-    "placeholderNote": "Content based on the About page of the official website hoaphuco.com.vn.",
     "galleryTitle": "Workshop & machinery.",
-    "ctaTitle": "Discuss your needs with Hoa Phu.",
     "p2": "Besides the machines we design and build, Hoa Phu supplies imported products from Japan, Europe and Taiwan as well as used machinery – helping customers build a complete system at the most reasonable cost.",
     "p3": "We continuously research, improve quality and develop new products that suit the production conditions of each business in Vietnam."
   },
@@ -183,7 +167,6 @@
     "eyebrow": "Projects & activities",
     "title": "Activity & equipment gallery.",
     "desc": "Hoa Phu’s real equipment and activities.",
-    "intro": "Real activity and equipment photos – not customer projects.",
     "all": "All",
     "empty": "No images in this field yet."
   },
@@ -199,7 +182,6 @@
     "share": "Share",
     "copy": "Copy link",
     "copied": "Copied",
-    "sampleNote": "This is a sample article and will be replaced by official company content.",
     "page": "Page"
   },
   "contact": {

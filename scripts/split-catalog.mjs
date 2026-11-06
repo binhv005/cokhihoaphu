@@ -40,9 +40,9 @@ const dir = resolve(root, 'public/data/products')
 rmSync(dir, { recursive: true, force: true })
 mkdirSync(dir, { recursive: true })
 for (const p of catalog) {
-  const { images, short, paragraphs, specTable, video, source } = p
+  const { images, short, paragraphs, specTables, video, source } = p
   const imageSizes = Object.fromEntries(images.map((i) => [i, sizes[i]]).filter(([, v]) => v))
-  writeFileSync(resolve(dir, `${p.slug}.json`), JSON.stringify({ images, imageSizes, short, paragraphs, specTable, video, source }))
+  writeFileSync(resolve(dir, `${p.slug}.json`), JSON.stringify({ images, imageSizes, short, paragraphs, specTables, video, source }))
 }
 
 // Kích thước ảnh trang trí (không thuộc danh mục) – nạp cùng bundle chính, rất nhỏ

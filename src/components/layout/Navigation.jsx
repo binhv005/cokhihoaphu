@@ -29,7 +29,7 @@ export default function Navigation({ wrapperRef }) {
   useEffect(() => () => clearTimeout(timer.current), [])
 
   const linkCls = ({ isActive }) =>
-    `relative shrink-0 whitespace-nowrap py-2 text-[14px] font-medium tracking-wide transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-px after:bg-orange after:transition-all after:duration-500 ${isActive ? 'text-white after:w-full' : 'text-white/70 hover:text-white after:w-0 hover:after:w-full'}`
+    `relative shrink-0 whitespace-nowrap py-2 text-[14px] font-medium tracking-wide transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-px after:bg-brand after:transition-all after:duration-500 ${isActive ? 'text-white after:w-full' : 'text-white/70 hover:text-white after:w-0 hover:after:w-full'}`
 
   return (
     <>
