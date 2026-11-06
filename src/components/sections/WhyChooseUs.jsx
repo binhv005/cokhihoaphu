@@ -108,7 +108,7 @@ function FillCircle({ level, Figure, index }) {
   const delay = 0.15 + index * 0.15
   const viewport = { once: true, margin: '-60px' }
   return (
-    <svg viewBox="0 -45 200 245" className="w-full overflow-visible" aria-hidden>
+    <svg viewBox="0 -8 200 208" className="w-full overflow-visible" aria-hidden>
       <defs>
         <clipPath id={id}><circle cx={CX} cy={CY} r={R} /></clipPath>
       </defs>
@@ -147,7 +147,7 @@ export default function WhyChooseUs() {
     <section className="bg-paper pb-16 pt-4 md:pb-24 md:pt-6">
       <Container>
         <Reveal as="h2" className="h2 max-w-2xl text-ink">{t('home.whyTitle')}</Reveal>
-        <ol className="relative mt-14 grid gap-x-6 gap-y-14 sm:grid-cols-2 md:mt-20 lg:grid-cols-5 lg:gap-x-8">
+        <ol className="relative mt-12 grid gap-x-6 gap-y-14 sm:grid-cols-2 md:mt-14 lg:grid-cols-5 lg:gap-x-8">
           {list.map((it, i) => (
             <li key={i} className="flex flex-col items-center text-center">
               <div className="w-full max-w-[220px] px-2">
